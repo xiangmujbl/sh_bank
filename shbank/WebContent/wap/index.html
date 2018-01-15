@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>中国云签</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+<!--dialog-->
+<script src="js/dialog/dialog-min.js"></script>
+<link href="css/ui-dialog.css" rel="stylesheet" type="text/css">
+<!--/dialog-->
+
+</head>
+
+<body>
+<header class="header">
+  <div class="account"><i class="icon icon-user" ></i></div>
+  <div class="tit"><a class="logo" href="/">中国云签</a></div>
+  <div class="menu">
+  <i class="icon icon-menu"></i>
+  <div class="nav">
+  <i class="icon-arrow"></i>
+    <ul>
+      <li><a href="index.html"><i class="icon icon-home"></i>首页</a></li>
+      <li><a href="notice.html"><i class="icon icon-sound"></i>公告提醒</a></li>
+      <li><a href="account.html"><i class="icon icon-user"></i>用户管理</a></li>
+      <li><a href="contract_archives.html"><i class="icon icon-book"></i>合同档案室</a></li>
+      <li><a href="contact.html"><i class="icon icon-tel"></i>联系我们</a></li>
+      <li><a href="share.html"><i class="icon icon-share"></i>分享关注</a></li>
+    </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="banner"> <img src="images/banner.png" alt="banner"> </div>
+  <ul class="product-list d-box">
+    <li class="flex1"><a href="" ><i class="icon-sign"></i>
+      <p class="red">电子签约室</p>
+      </a> </li>
+    <li class="flex1 center"><a href=""><i class="icon-check"></i>
+      <p>验真</p>
+      </a> </li>
+    <li class="flex1"><a href=""><i class="icon-preserve"></i>
+      <p>保全</p>
+      </a> </li>
+  </ul>
+  <div class="product-pre d-box">
+    <div class="left flex1">
+      <p>产品介绍</p>
+      <ul>
+        <li><a href="">标准型签约室 </a></li>
+        <li><a href="">对接型签约室 </a></li>
+        <li><a href="">平台型签约室 </a></li>
+        <li><a href="">合同管理软件 </a></li>
+      </ul>
+    </div>
+    <ul class="right flex1">
+      <li><a href=""><i class="icon-become"></i> 成为电子合同专家 </a></li>
+      <li><a href=""><i class="icon-case"></i> 应用案例 </a></li>
+    </ul>
+  </div>
+</div>
+<footer class="footer"> <a href=""><i class="icon-aboutus"></i>关于我们</a> <a href=""><i class="icon-contact"></i>联系我们</a> </footer>
+
+<div class="login none">
+<div class="login-box">
+<p class="title"><a class="close fr" href="javascript:$('.login').addClass('none');"><i class="icon-close"></i></a>账号登录</p>
+<form action="http://www.yunsigntest.com/login.do" method="post" class="login-form">
+<input type="hidden" value="1" name="type">
+<input type="hidden" value="null" id="appId" >
+<label><i class="icon-user"></i><input name="account" type="text" placeholder="请输入手机号" required oninvalid="setCustomValidity('请填写手机号')" oninput="setCustomValidity('')"></label>
+<label><i class="icon-password"></i><input name="password" type="password" placeholder="请输入密码" required oninvalid="setCustomValidity('请填写密码')" oninput="setCustomValidity('')"></label>
+<p class="d-box"><a class="btn btn-red-outline" href="#">注册</a> <button class="btn btn-red" type="submit"> 登录</button> </p>
+</form>
+</div>
+<div class="overlay"></div>
+</div>
+<script>
+      (function (win){
+      	var doc = win.document,
+      	html = doc.documentElement;
+      	var baseWidth = 720,
+      	grids = baseWidth / 100,
+      	resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+      	recalc = function(){
+      		var clientWidth = html.clientWidth || 320;
+      		if( clientWidth > 720 ){ clientWidth = 720 };
+      		html.style.fontSize = clientWidth / grids + 'px';
+      	};
+      	if (!doc.addEventListener) return;
+      	win.addEventListener(resizeEvt, recalc, false);
+      	doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(window);
+	  
+	  $(function(){
+		  //退出登录
+		  $(document).on('click touchstart','.account.current',function(){
+			  var d = dialog({
+				  fixed: true,
+				  title: '提示',
+				  content: '<p>确认退出？</p>',
+				  okValue: '确定',
+				  ok: function () {
+					   $('.account').removeClass('current');
+					  
+				  },
+				  cancelValue: '取消',
+				  cancel: function () {}
+				});
+				d.showModal();
+
+
+		  })
+		  $(document).on('click touchstart','.account:not(.current)',function(){
+			  $('.login').removeClass('none')
+		  })
+		  
+		  $('.login-form').submit(function(){
+			  $(this).find('.btn').attr('disabled',true);
+			  $.post($(this).attr('action'),$(this).serialize(),function(e){
+				  if("101" == e){
+			      		$('.login').addClass('none');
+						$('.account').addClass('current') 				            	 
+			      }else if("119" == e){ 
+			      		alert('已停用或者已注销的子账户无法登陆')
+		          }else{
+			      		alert('您输入的密码和账户名不匹配')
+			        
+			      }
+			  })
+			  $(this).find('.btn').removeAttr('disabled');
+			  return false;
+		  })
+	  })
+    </script>
+</body>
+</html>

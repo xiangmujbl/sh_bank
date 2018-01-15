@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>分享关注-中国云签</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="header">
+  <div class="account" onClick="history.back(-1)"><i class="icon icon-arrowleft" ></i></div>
+  <div class="tit">分享关注</div>
+  <div class="menu"> <i class="icon icon-menu"></i>
+    <div class="nav"> <i class="icon-arrow"></i>
+      <ul>
+        <li><a href="contact.html"><i class="icon icon-tel"></i>联系我们</a></li>
+        <li><a href="share.html"><i class="icon icon-share"></i>分享关注</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="share mt20">
+  <div class="qrcode"><img src="images/qrcode.png"><p>扫一扫，关注中国云签</p></div>
+  <p class="mt20 mb20 share-title">分享中国云签</p>
+  <p class="share-icons"><a href="javascript:alert('请至地址栏长按即可复制链接发送给你的好友!');" class="icon-wechat"></a> <a href="http://openmobile.qq.com/api/check?page=shareindex.html&style=9&site=中国云签&summary=国家可靠电子签名重大工程、电子合同国家标准制定者和电子签约行业领导者，为企业、个人提供终身独立的电子签约室，用户通过PC、手机签署等同于纸质合同法律效力的电子合同。&sdkv=0&title=中国云签&status_os=0&sdkp=0&imageUrl=https://www.yunsign.com/images/b_logo.png&appid=200004&action=shareToQQ&targetUrl=https://www.yunsign.com&page_url=https://www.yunsign.com" class="icon-qq"></a>  <a href="http://service.weibo.com/share/mobile.php?title=中国云签， 国家可靠电子签名重大工程、电子合同国家标准制定者和电子签约行业领导者，为企业、个人提供终身独立的电子签约室，用户通过PC、手机签署等同于纸质合同法律效力的电子合同。https://www.yunsign.com&pic=https://www.yunsign.com/images/b_logo.png" class="icon-weibo"></a> <a href="http://qzs.qzone.qq.com/open/connect/widget/mobile/qzshare/index.html?url=https://www.yunsign.com&title=中国云签&site=&summary=中国云签, 国家可靠电子签名重大工程、电子合同国家标准制定者和电子签约行业领导者,为企业、个人提供终身独立的电子签约室,用户通过PC、手机签署等同于纸质合同法律效力的电子合同.&imageUrl=http://www.yunsigntest.com/images/b_logo.png" class="icon-qzone"></a></p>
+  </div>
+</div>
+<footer class="footer"> <a href=""><i class="icon-aboutus"></i>关于我们</a> <a href=""><i class="icon-contact"></i>联系我们</a> </footer>
+<script>
+      (function (win){
+      	var doc = win.document,
+      	html = doc.documentElement;
+      	var baseWidth = 720,
+      	grids = baseWidth / 100,
+      	resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+      	recalc = function(){
+      		var clientWidth = html.clientWidth || 320;
+      		if( clientWidth > 720 ){ clientWidth = 720 };
+      		html.style.fontSize = clientWidth / grids + 'px';
+      	};
+      	if (!doc.addEventListener) return;
+      	win.addEventListener(resizeEvt, recalc, false);
+      	doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(window);
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="CenterService">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../ECLIPSE"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="CenterService.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/ant.jar"/>
+        <pathelement location="lib/antlr-2.7.7.jar"/>
+        <pathelement location="lib/aopalliance-1.0.jar"/>
+        <pathelement location="lib/aspectjrt-1.7.4.jar"/>
+        <pathelement location="lib/aspectjweaver-1.7.4.jar"/>
+        <pathelement location="lib/axis.jar"/>
+        <pathelement location="lib/batik-all-1.7.jar"/>
+        <pathelement location="lib/batik-transcoder.jar"/>
+        <pathelement location="lib/bcpkix-jdk15on-1.48.jar"/>
+        <pathelement location="lib/bcprov-jdk15on-1.48.jar"/>
+        <pathelement location="lib/bouncycastle.jar"/>
+        <pathelement location="lib/c3p0-0.9.5-pre8.jar"/>
+        <pathelement location="lib/c3p0-oracle-thin-extras-0.9.5-pre8.jar"/>
+        <pathelement location="lib/commons-beanutils-1.8.3.jar"/>
+        <pathelement location="lib/commons-codec-1.5.jar"/>
+        <pathelement location="lib/commons-collections-3.2.1.jar"/>
+        <pathelement location="lib/commons-dbcp.jar"/>
+        <pathelement location="lib/commons-discovery-0.2.jar"/>
+        <pathelement location="lib/commons-email-1.3.2.jar"/>
+        <pathelement location="lib/commons-fileupload-1.3.1.jar"/>
+        <pathelement location="lib/commons-httpclient-3.1.jar"/>
+        <pathelement location="lib/commons-io-2.4.jar"/>
+        <pathelement location="lib/commons-lang-2.5.jar"/>
+        <pathelement location="lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="lib/commons-net-3.2.jar"/>
+        <pathelement location="lib/commons-pool.jar"/>
+        <pathelement location="lib/dom4j-1.6.1.jar"/>
+        <pathelement location="lib/ehcache-core-2.6.6.jar"/>
+        <pathelement location="lib/ehcache-terracotta-2.6.6.jar"/>
+        <pathelement location="lib/ezmorph-1.0.6.jar"/>
+        <pathelement location="lib/fastjson-1.2.2.jar"/>
+        <pathelement location="lib/freemarker.jar"/>
+        <pathelement location="lib/gson-2.2.4.jar"/>
+        <pathelement location="lib/guava-14.0.1.jar"/>
+        <pathelement location="lib/hibernate-c3p0-4.1.2.Final.jar"/>
+        <pathelement location="lib/hibernate-commons-annotations-4.0.2.Final.jar"/>
+        <pathelement location="lib/hibernate-core-4.2.3.Final.jar"/>
+        <pathelement location="lib/hibernate-entitymanager-4.2.3.Final.jar"/>
+        <pathelement location="lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+        <pathelement location="lib/hibernate-validator-4.3.0.Final.jar"/>
+        <pathelement location="lib/httpclient-4.1.2.jar"/>
+        <pathelement location="lib/httpcore-4.1.3.jar"/>
+        <pathelement location="lib/icepdf-core.jar"/>
+        <pathelement location="lib/icepdf-viewer.jar"/>
+        <pathelement location="lib/jackson-all-1.9.11.jar"/>
+        <pathelement location="lib/javassist-3.15.0-GA.jar"/>
+        <pathelement location="lib/jaxrpc.jar"/>
+        <pathelement location="lib/jboss-logging-3.1.0.GA.jar"/>
+        <pathelement location="lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+        <pathelement location="lib/jdom.jar"/>
+        <pathelement location="lib/jedis-2.2.1.1.jar"/>
+        <pathelement location="lib/json-lib-2.4-jdk15.jar"/>
+        <pathelement location="lib/jsoup-1.8.2.jar"/>
+        <pathelement location="lib/jstl.jar"/>
+        <pathelement location="lib/junit-4.11.jar"/>
+        <pathelement location="lib/libthrift-0.9.1.jar"/>
+        <pathelement location="lib/log4j-1.2.17.jar"/>
+        <pathelement location="lib/mail.jar"/>
+        <pathelement location="lib/mchange-commons-java-0.2.7.jar"/>
+        <pathelement location="lib/mysql-connector-java-5.1.26-bin.jar"/>
+        <pathelement location="lib/quartz-1.8.6.jar"/>
+        <pathelement location="lib/ra-toolkit-3.5.3.1.jar"/>
+        <pathelement location="lib/SADK3.1.0.7.jar"/>
+        <pathelement location="lib/servlet-api-2.5.jar"/>
+        <pathelement location="lib/slf4j-api-1.7.5.jar"/>
+        <pathelement location="lib/slf4j-jdk14-1.6.1.jar"/>
+        <pathelement location="lib/slf4j-log4j12-1.5.8.jar"/>
+        <pathelement location="lib/spring-aop-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-aspects-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-beans-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-context-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-context-support-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-core-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-data-commons-1.5.1.RELEASE.jar"/>
+        <pathelement location="lib/spring-data-jpa-1.3.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-expression-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-instrument-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-instrument-tomcat-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-jdbc-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-jms-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-orm-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-oxm-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-struts-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-test-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-tx-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-web-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-webmvc-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/spring-webmvc-portlet-3.2.0.RELEASE.jar"/>
+        <pathelement location="lib/standard.jar"/>
+        <pathelement location="lib/terracotta-toolkit-1.6-runtime-5.5.0.jar"/>
+        <pathelement location="lib/test.jar"/>
+        <pathelement location="lib/urlrewritefilter-4.0.3.jar"/>
+        <pathelement location="lib/validation-api-1.0.0.GA.jar"/>
+        <pathelement location="lib/wsdl4j.jar"/>
+        <pathelement location="lib/xml-apis-ext-1.3.04.jar"/>
+        <pathelement location="lib/xmlworker-1.2.1-micmiu.jar"/>
+        <pathelement location="lib/zxing-2.2.jar"/>
+        <pathelement location="lib/itext5.5.8/itextpdf-5.5.8.jar"/>
+        <pathelement location="lib/itext5.5.8/itext-pdfa-5.5.8.jar"/>
+        <pathelement location="lib/itext5.5.8/itext-xtra-5.5.8.jar"/>
+        <pathelement location="lib/itext5.5.8/xmlworker-5.5.8.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="CenterService.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="ServiceThrift">
+        <java classname="com.mmec.thrift.ServiceThrift" failonerror="true" fork="yes">
+            <classpath refid="CenterService.classpath"/>
+        </java>
+    </target>
+</project>

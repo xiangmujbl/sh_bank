@@ -1,0 +1,17 @@
+@charset "utf-8";
+.activate{ padding:40px;}
+.activate-title { font-size:30px; margin-bottom:10px}
+.activate-step{ height:25px; width:400px; margin:0 auto; border-radius:12px; overflow:hidden;behavior: url(js/PIE.htc);}
+.activate-step li{background:#e2e2e2; height:25px; line-height:25px; width:25%; float:left; text-align:center; color:#868686}
+.activate-step li.active{ background:#76ccff; color:#fff}
+.activate-step li.disabled{background:#888; color:#333}
+.activate-box{ border:5px solid #d8d8d8; padding:50px; margin:30px 60px;}
+.activate .alert{margin:10px 60px -20px; }
+.activate-check{ width:500px;   margin-left: auto; margin-right: auto;font-size:14px; line-height:50px;}
+.activate-check dt{ float:left; padding-right:10px; width:140px; text-align:right}
+.activate-check dd{ float:left; width:350px;}
+.activate-check dd p{ line-height:25px; margin-top:14px}
+.activate-action{margin:0 60px; text-align:right}
+.activate-action button{ width:160px;}
+.activate-failed{ border-color:#fbc3c4}
+.activate-passed{ border-color:#b2e0c7}

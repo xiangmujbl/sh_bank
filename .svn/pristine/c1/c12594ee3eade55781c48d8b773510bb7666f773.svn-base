@@ -1,0 +1,28 @@
+### set log levels ###
+log4j.rootLogger=info,error,stdout,info
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=[mmecservice3.0] %d{yyyy-MM-dd HH:mm:ss} [%c] -%m%n
+     
+log4j.logger.info=info
+log4j.appender.info=org.apache.log4j.RollingFileAppender
+log4j.appender.info.layout=org.apache.log4j.PatternLayout
+log4j.appender.info.layout.ConversionPattern=[mmecservice3.0] %d{yyyy-MM-dd HH:mm:ss} [%c] - %m%n
+log4j.appender.info.datePattern='.'yyyy-MM-dd
+log4j.appender.info.Threshold = INFO
+log4j.appender.info.append=true
+log4j.appender.info.File=mmeclog30.log
+log4j.appender.info.MaxFileSize=1MB
+log4j.appender.info.MaxBackupIndex=10000
+ 
+ 
+log4j.logger.error=error
+log4j.appender.error=org.apache.log4j.RollingFileAppender
+log4j.appender.error.layout=org.apache.log4j.PatternLayout
+log4j.appender.error.layout.ConversionPattern=[mmecservice3.0] %d{yyyy-MM-dd HH:mm:ss} [%c] - %m%n
+log4j.appender.error.datePattern='.'yyyy-MM-dd
+log4j.appender.error.Threshold = ERROR
+log4j.appender.error.append=true
+log4j.appender.error.File=mmeclog30.log
+log4j.appender.error.MaxFileSize=1MB
+log4j.appender.error.MaxBackupIndex=10000

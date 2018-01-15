@@ -1,0 +1,7 @@
+2017-10-09 17:25:02 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1db1f78: startup date [Mon Oct 09 17:25:02 CST 2017]; root of context hierarchy
+ 2017-10-09 17:25:02 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+ 2017-10-09 17:29:33 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1db1f78: startup date [Mon Oct 09 17:29:33 CST 2017]; root of context hierarchy
+ 2017-10-09 17:29:34 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+ 2017-10-09 17:31:35 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1db1f78: startup date [Mon Oct 09 17:31:35 CST 2017]; root of context hierarchy
+ 2017-10-09 17:31:35 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+ 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source>
+	<forname>com.mysql.jdbc.Driver</forname>
+
+	<url>jdbc:mysql://192.168.10.150:3306/mmec</url>
+	<username>tester</username>
+	<password>123456</password>
+</source>

@@ -1,0 +1,39 @@
+@charset "utf-8";
+html {
+	color: #000;
+	background: #f3f3f3;
+}
+.ht-module {
+	background: #eee;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+.recive_cell {
+	border-top: 0 none;
+}
+.recive_cell li {
+	line-height: 38px;
+}
+.container-full {
+	width: 1180px;
+	margin: 20px auto 0;
+	background: #fff;
+	min-height: 500px;
+	padding: 10px;
+}
+.input-date {
+	background: #fff url(../images/home/datePicker.gif) no-repeat right;
+}
+.dialog-contact {
+	top: 183px;
+}
+.smscode {
+	margin: 20px 10% 
+}
+.smscode .recive_cell{ margin:20px 0; padding:0 50px; border:1px solid #ddd}
+sup {
+	vertical-align: super;
+}
+.sign-tools a i:before{ content:''}
+.uploadify,#sendCode{ display:inline-block; *display:inline; *zoom:1; vertical-align:middle; margin-bottom:0}
+.vcode{ width:80px;}

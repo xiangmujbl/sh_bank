@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* faq */
+.faq-tab {
+	border-bottom: 3px solid #4da3d6;
+	text-align: center;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.faq-tab li {
+	display: inline-block;
+*display:inline;
+*zoom:1;
+	margin: 0 10px
+}
+.faq-tab li a {
+	display: block;
+	width: auto;
+	min-width: 180px;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 15px;
+	font-size: 16px;
+	border: 1px solid #e2e2e2;
+	border-bottom: 0 none;
+	background: #f5f7f8;
+	border-radius: 5px 5px 0 0;
+	font-weight: 700
+}
+.faq-tab li.current a {
+	background: #76ccff;
+	color: #fff;
+	border-color: #65b1de
+}
+.savant_title_closed, .savant_title,.about_subhead{
+	background: #f5f7f8;
+	border-bottom: 2px solid #ddd;
+	font-size: 16px;
+	color: #119cfe;
+	padding-left: 30px;
+	line-height: 40px;
+	cursor: pointer;
+	margin-bottom:10px;
+	border-radius:5px;
+}
+.savant_title,.savant_title_closed:hover,.about_subhead {
+	background: #76ccff;
+	color: #fff;
+	border-bottom-color: #76ccff
+}
+.savant_text ,.about_text{
+	font-size: 14px;
+	text-indent: 28px;
+	line-height: 28px;
+	padding: 10px;
+}
+
+.about_savant strong{ font-weight:700}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>联系我们-中国云签</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="header">
+  <div class="account" onClick="history.back(-1)"><i class="icon icon-arrowleft" ></i></div>
+  <div class="tit">联系我们</div>
+  <div class="menu"> <i class="icon icon-menu"></i>
+    <div class="nav"> <i class="icon-arrow"></i>
+      <ul>
+        <li><a href="contact.html"><i class="icon icon-tel"></i>联系我们</a></li>
+        <li><a href="share.html"><i class="icon icon-share"></i>分享关注</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="contact">
+    <p class="tel400">服务热线：400-025-5858</p>
+    <p class="title">全国各地区用户联系方式</p>
+    <div class="content mb20">
+      <p  class="gray">北京、天津、河北、内蒙古、辽宁、吉林、黑龙江</p>
+      <p class="mb20"> 王经理：13671294373 </p>
+      <p> 地址：北京市朝阳区朝外大街甲6号万通中心A座401</p>
+      <p> 电话：010-57318173</p>
+    </div>
+    <div class="content mb20">
+      <p class="gray"> 广东、广西、云南、贵州、 海南、港澳</p>
+      <p class="mb20">周经理：13823304606             高经理：18038100805</p>
+      <p> 地址：深圳南山区科技园中区科兴科学园B栋1单元701</p>
+      <p> 电话：0755-23180321</p>
+    </div>
+    <div class="content mb20">
+      <p class="gray">上海、山东、浙江</p>
+      <p class="mb20"> 钟经理：13962161986 </p>
+      <p> 地址：苏州工业园区新平街388号腾飞创新园塔楼C座501</p>
+      <p> 电话：0512-66617086             0512-66610917</p>
+    </div>
+    <div class="content mb20">
+      <p class="gray"> 江苏、河南、山西</p>
+      <p class="mb20">钟经理：13962161986</p>
+      <p>南京总部： 南京市江宁开发区东吉大道1号（江苏软件园）</p>
+      <p>电话：025-68511713                025-68511716</p>
+    </div>
+    <div class="content mb20">
+      <p  class="gray"> 重庆、四川、湖北、西藏</p>
+      <p  class="mb20"> 葛经理：15380790679             尤经理：13951733490 </p>
+      <p> 南京总部： 南京市江宁开发区东吉大道1号（江苏软件园） </p>
+      <p> 电话：025-68511711                025-68511715 </p>
+    </div>
+    <div class="content mb20">
+      <p  class="gray"> 陕西、宁夏、青海、甘肃、 新疆</p>
+      <p  class="mb20">王经理：18626457884             董经理：13382018704<br>
+        张经理：13404138208</p>
+      <p> 南京总部： 南京市江宁开发区东吉大道1号（江苏软件园） </p>
+      <p>电话：025-68253432                025-68105961</p>
+    </div>
+    <div class="content mb20">
+      <p  class="gray"> 福建、安徽、湖南、江西 </p>
+      <p  class="mb20">朱经理：18012957755             华经理：18951962133<br>
+        安经理：15851865407</p>
+      <p> 南京总部： 南京市江宁开发区东吉大道1号（江苏软件园） </p>
+      <p> 电话：025-68253430                025-68253433
+        025-68253435 </p>
+    </div>
+    
+    <p class="end">请多给我们一次为您服务的机会！</p>
+  </div>
+</div>
+<footer class="footer"> <a href=""><i class="icon-aboutus"></i>关于我们</a> <a href=""><i class="icon-contact"></i>联系我们</a> </footer>
+<script>
+      (function (win){
+      	var doc = win.document,
+      	html = doc.documentElement;
+      	var baseWidth = 720,
+      	grids = baseWidth / 100,
+      	resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+      	recalc = function(){
+      		var clientWidth = html.clientWidth || 320;
+      		if( clientWidth > 720 ){ clientWidth = 720 };
+      		html.style.fontSize = clientWidth / grids + 'px';
+      	};
+      	if (!doc.addEventListener) return;
+      	win.addEventListener(resizeEvt, recalc, false);
+      	doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(window);
+    </script>
+</body>
+</html>

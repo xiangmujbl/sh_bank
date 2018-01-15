@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>公告提醒-中国云签</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="header">
+  <div class="account" onClick="history.back(-1)"><i class="icon icon-arrowleft" ></i></div>
+  <div class="tit">公告提醒</div>
+  <div class="menu">
+  <i class="icon icon-menu"></i>
+  <div class="nav">
+  <i class="icon-arrow"></i>
+    <ul>
+      <li><a href="index.html"><i class="icon icon-home"></i>首页</a></li>
+      <li><a href="notice.html"><i class="icon icon-sound"></i>公告提醒</a></li>
+      <li><a href="account.html"><i class="icon icon-user"></i>用户管理</a></li>
+      <li><a href="contract_archives.html"><i class="icon icon-book"></i>合同档案室</a></li>
+      <li><a href="contact.html"><i class="icon icon-tel"></i>联系我们</a></li>
+      <li><a href="share.html"><i class="icon icon-share"></i>分享关注</a></li>
+    </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <ul class="list notice-list">
+  <li><a href="#">如何下载保存电子合同？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">什么是可靠的电子签名？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">可靠的电子签名具备什么效力？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">有数字证书就是可靠电子签名吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">“电子签章”、“电子图章”、“电子印章”、“电子公章”等有法律效力吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">在PDF等文档中查阅到数字证书签名后，该文档是否有效的电子合同吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">一般的电子签名与可靠的电子签名两者之间有什么区别？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">数字证书+电子图章就是有效电子合同吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">有效电子合同的两个基本条件是什么？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 什么是电子合同的法律有效性？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 可以完全取代纸质合同的电子合同标准是什么？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 什么是中国云签的MMEC电子合同标准？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 中国云签MMEC电子合同的权威性体现在哪几个方面？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 中国云签的电子合同便捷性有哪些？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 中国云签的电子合同存在形式是什么？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 什么是电子签约室？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 电子签约室有哪几种？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 中国云签及其电子签约室可以应用在哪些领域？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 我已经被邀请成为中国云签用户了，可以开设自己的电子签约室吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 我没有买卖盾数字证书，可以订立有效电子合同吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 我已经有数字证书了，还需要办理新的数字证书吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 我可以把企业电子签约室设立在自己的机房吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 我的电子签约室如何与原有系统对接？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 个人可以开设电子签约室吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 中国云签提供第三方电子合同数据备份吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 如何邀请对方来我的电子签约室签署合同？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">电子合同档案室中是否可以查询合同的履行情况？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">电子合同档案室有哪些强劲功能？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">如何设置合同履约提醒？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 中国云签如何保证电子合同数据的安全性？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 我的电子合同可以验真吗？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">中国云签第三方电子合同订立平台在电子签约中的作用是什么？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 电子合同是否获得国家相关部门或者国家标准认可？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#">中国云签的电子合同是否可以提供额外的公证服务？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 单纯使用TSA（时间戳）证据为什么不能保证电子合同的法律效力？<i class="icon icon-arrowright"></i></a></li>
+  <li><a href="#"> 中国云签用户如何使用有效电子合同进行法律维权？<i class="icon icon-arrowright"></i></a></li>
+  </ul>
+</div>
+<footer class="footer"> <a href=""><i class="icon-aboutus"></i>关于我们</a> <a href=""><i class="icon-contact"></i>联系我们</a> </footer>
+
+
+<script>
+      (function (win){
+      	var doc = win.document,
+      	html = doc.documentElement;
+      	var baseWidth = 720,
+      	grids = baseWidth / 100,
+      	resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+      	recalc = function(){
+      		var clientWidth = html.clientWidth || 320;
+      		if( clientWidth > 720 ){ clientWidth = 720 };
+      		html.style.fontSize = clientWidth / grids + 'px';
+      	};
+      	if (!doc.addEventListener) return;
+      	win.addEventListener(resizeEvt, recalc, false);
+      	doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(window);
+    </script>
+</body>
+</html>

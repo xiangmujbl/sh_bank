@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* 找回密码 */
+.findpwd {
+	margin-top: 20px;
+	border: 1px solid #d8d8d8;
+	border-top: 2px solid #e60012
+}
+.v_steps {
+	width: 769px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.v_steps .v_p {
+	width: 62px;
+	height: 71px;
+	display: inline-block;
+ *zoom: 1;
+ *display: inline;
+}
+.v_ph {
+	width: 162px;
+	height: 71px;
+	display: inline-block;
+ *zoom: 1;
+ *display: inline;
+	background: url(../images/v_hengxian.png) 0 center no-repeat;
+}
+.v_steps span img{ vertical-align:middle}
+.v_steps .v_num {
+	width: 62px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	background: url("../images/v_arr.png") center no-repeat;
+}
+
+.v_steps .v_num_grey {
+	width: 62px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	background: url("../images/v_cirle.png") center 6px no-repeat;
+}
+.v_steps .v_num_red {
+	width: 62px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	background: url("../images/v_cirle_red.png") 15px 6px no-repeat;
+}
+.v_steps .v_text {
+	width: 62px;
+	display: block;
+	font-size: 14px;
+	height: 20px;
+	color: #abadb3;
+	line-height: 20px;
+	text-align: center;
+}
+.v_steps .v_text_pass {
+	width: 62px;
+	display: block;
+	font-size: 14px;
+	height: 20px;
+	color: #e4393c;
+	line-height: 20px;
+	text-align: center;
+}
+.v_steps .v_text_current {
+	width: 62px;
+	display: block;
+	font-size: 14px;
+	height: 20px;
+	color: #e60012;
+	line-height: 20px;
+	text-align: center;
+}
+.v_steps .v_blue{
+    width: 62px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    background: url("../images/v_blue.png") center no-repeat;
+}
+.v_steps .v_num_blue{
+    width: 62px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    background: url("../images/v_cirle_blue.png") 15px 6px no-repeat;
+}
+.v_text_blue{
+    color: #007bd2;
+}
+.v_text_red{
+    color: #e4393c;;
+}
+.find-form {
+	width: 450px;
+	padding: 50px 0;
+	margin: 0 auto
+}
+.find-form span {
+	width: 90px;
+	padding-right: 10px;
+	height: 37px;
+	line-height: 37px;
+	display: inline-block;
+ *zoom: 1;
+ *display: inline;
+	font-size: 14px;
+	color: #2f3239;
+	text-align: right;
+}
+
+.find-form button {
+	width: 143px;
+}
+.find-form .changeCode {
+	vertical-align: middle
+}
+.v_send {
+	width: 380px;
+	height: 64px;
+	margin: 0 auto;
+	padding-left: 55px;
+	background: url("../images/v_gou.jpg") -16px 0 no-repeat;
+}
+.v_intro_one {
+	color: #2f3239;
+	font-size: 16px;
+	width: 380px;
+	height: 28px;
+	line-height: 28px;
+}
+.v_intro_two {
+	color: #abadb3;
+	font-size: 12px;
+	width: 380px;
+	height: 28px;
+	line-height: 28px;
+}
+.v_intro_tel {
+	color: #e60012;
+	font-family: Arial, "宋体";
+	font-size: 18px;
+	display: inline-block;
+ *zoom: 1;
+ *display: inline;
+}
+.v_intro_norev {
+	font-size: 12px;
+	color: #007bd2;
+	display: inline-block;
+ *zoom: 1;
+ *display: inline;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+}
+.v_intro_norev span {
+	position: absolute;
+	z-index: 13;
+	display: block;
+	width: 15px;
+	height: 11px;
+	left: 22px;
+	display: none;
+	top: 20px;
+	background: url("../images/v_uparr.jpg") 0 0 no-repeat;
+}
+.v_verfdiv {
+	width: 318px;
+	height: 110px;
+	position: absolute;
+	z-index: 12;
+	left: -21px;
+	top: 30px;
+	background: #fff;
+	cursor: default;
+	border: 1px solid #abadb3;
+	display: none;
+}
+.v_verfdiv p {
+	width: 340px;
+	color: #abadb3;
+	font-size: 12px;
+	line-height: 36px;
+	height: 36px;
+	padding-left: 12px;
+}
+.v_send_done {
+	width: 460px;
+	height: 64px;
+	margin: 0 auto;
+	padding-left: 85px;
+	background: url("../images/v_gou.jpg") 0px 0 no-repeat;
+}
+.v_intro_done {
+    color: #2f3239;
+    font-size: 24px;
+    width: 380px;
+    height: 28px;
+    line-height: 32px;
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>合同档案室-中国云签</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
+</head>
+
+<body>
+<header class="header">
+  <div class="account" onClick="history.back(-1)"><i class="icon icon-arrowleft" ></i></div>
+  <div class="tit">合同档案室</div>
+  <div class="menu"> <i class="icon icon-menu"></i>
+    <div class="nav"> <i class="icon-arrow"></i>
+      <ul>
+        <li><a href="index.html"><i class="icon icon-home"></i>首页</a></li>
+        <li><a href="notice.html"><i class="icon icon-sound"></i>公告提醒</a></li>
+        <li><a href="account.html"><i class="icon icon-user"></i>用户管理</a></li>
+        <li><a href="contract_archives.html"><i class="icon icon-book"></i>合同档案室</a></li>
+        <li><a href="contact.html"><i class="icon icon-tel"></i>联系我们</a></li>
+        <li><a href="share.html"><i class="icon icon-share"></i>分享关注</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <ul class="tab mt20">
+    <li class="current">
+      <p><a href="contract_archives.html">收付款管理</a></p>
+    </li>
+    <li>
+      <p><a href="contract_remind.html">合同提醒</a></p>
+    </li>
+    <li>
+      <p><a href="contract_permission.html">权限设置</a></p>
+    </li>
+    <li>
+      <p><a href="contract_borrow.html">借阅管理</a></p>
+    </li>
+  </ul>
+  <form class="search-form h-box">
+    <input type="search" name="title" placeholder="请输入合同标题、编号" class="recive-search input flex1" autofocus>
+    <button type="submit" class="btn"><i class="icon-search"></i></button>
+  </form>
+  <ul class="record-ul mt20">
+    <li>
+      <h4>招财一号投资招财一号投资合同<span class="gray">签署成功</span></h4>
+      <p class="mt20">江苏买卖网电子商务有限公司 <span class="green">已签署</span></p>
+      <p class="mb20">紫枫信贷 <span class="green">已签署</span> </p>
+      <hr class="hr">
+      <p class="mt20">收付款类型： 付款</p>
+      <p class="mb20">收付款状态： 未结清 </p>
+      <p class="btns"><span class="gray">编号：CPC02102121212121</span> <a class="btn btn-white" href="contract_archives_view.html">详情</a> </p>
+    </li>
+    
+    <li>
+      <h4>招财一号投资招财一号投资合同<span class="gray">签署成功</span></h4>
+      <p class="mt20">江苏买卖网电子商务有限公司 <span class="green">已签署</span></p>
+      <p class="mb20">紫枫信贷 <span class="green">已签署</span> </p>
+      <hr class="hr">
+      <p class="mt20">收付款类型： 付款</p>
+      <p class="mb20">收付款状态： 未结清 </p>
+      <p class="btns"><span class="gray">编号：CPC02102121212121</span> <a class="btn btn-white" href="contract_archives_view.html">详情</a> </p>
+    </li>
+    
+    <li>
+      <h4>招财一号投资招财一号投资合同<span class="gray">签署成功</span></h4>
+      <p class="mt20">江苏买卖网电子商务有限公司 <span class="green">已签署</span></p>
+      <p class="mb20">紫枫信贷 <span class="green">已签署</span> </p>
+      <hr class="hr">
+      <p class="mt20">收付款类型： 付款</p>
+      <p class="mb20">收付款状态： 未结清 </p>
+      <p class="btns"><span class="gray">编号：CPC02102121212121</span> <a class="btn btn-white" href="contract_archives_view.html">详情</a> </p>
+    </li>
+    
+    <li>
+      <h4>招财一号投资招财一号投资合同<span class="gray">签署成功</span></h4>
+      <p class="mt20">江苏买卖网电子商务有限公司 <span class="green">已签署</span></p>
+      <p class="mb20">紫枫信贷 <span class="green">已签署</span> </p>
+      <hr class="hr">
+      <p class="mt20">收付款类型： 付款</p>
+      <p class="mb20">收付款状态： 未结清 </p>
+      <p class="btns"><span class="gray">编号：CPC02102121212121</span> <a class="btn btn-white" href="contract_archives_view.html">详情</a> </p>
+    </li>
+    
+    <li>
+      <h4>招财一号投资招财一号投资合同<span class="gray">签署成功</span></h4>
+      <p class="mt20">江苏买卖网电子商务有限公司 <span class="green">已签署</span></p>
+      <p class="mb20">紫枫信贷 <span class="green">已签署</span> </p>
+      <hr class="hr">
+      <p class="mt20">收付款类型： 付款</p>
+      <p class="mb20">收付款状态： 未结清 </p>
+      <p class="btns"><span class="gray">编号：CPC02102121212121</span> <a class="btn btn-white" href="contract_archives_view.html">详情</a> </p>
+    </li>
+  </ul>
+</div>
+<footer class="footer"> <a href=""><i class="icon-aboutus"></i>关于我们</a> <a href=""><i class="icon-contact"></i>联系我们</a> </footer>
+<script>
+      (function (win){
+      	var doc = win.document,
+      	html = doc.documentElement;
+      	var baseWidth = 720,
+      	grids = baseWidth / 100,
+      	resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+      	recalc = function(){
+      		var clientWidth = html.clientWidth || 320;
+      		if( clientWidth > 720 ){ clientWidth = 720 };
+      		html.style.fontSize = clientWidth / grids + 'px';
+      	};
+      	if (!doc.addEventListener) return;
+      	win.addEventListener(resizeEvt, recalc, false);
+      	doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(window);
+</script>
+</body>
+</html>

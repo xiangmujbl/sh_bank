@@ -1,0 +1,261 @@
+@charset "utf-8";
+body, html {
+	height: 100%;
+	-webkit-tap-highlight-color: transparent
+}
+body {
+	background-color: #FBF9FE;
+	font-size: 15px;
+}
+.weui_label {
+	width: 4.5em;
+}
+.weui_cells {
+	font-size: 15px;
+}
+@font-face {
+	font-family: "iconfont";
+	src: url('iconfont.eot'); /* IE9*/
+	src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('iconfont.woff') format('woff'), /* chrome、firefox */ url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.icon-minus, .icon-close, .icon-plus:before, .icon-del:before {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-minus:before {
+	content: "\e7de";
+}
+.icon-close:before, .icon-del:before {
+	content: "\e637";
+}
+.icon-plus:before {
+	content: "\e758";
+}
+.recive-ul .checkbox {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: middle;
+	background: none;
+	outline: none;
+	position: relative;
+	float: right;
+	margin-top: 12.5px;
+}
+.recive-ul .checkbox::after {
+	font-family: weui;
+	content: '\EA01';
+	color: #C9C9C9;
+	font-size: 23px;
+	display: block;
+}
+.recive-ul .checkbox:checked::after {
+	font-family: weui;
+	content: '\EA06';
+	color: #09BB07;
+	display: block;
+}
+.recive-ul {
+	background: #f5f5f5;
+	height: 240px;
+	overflow: auto
+}
+.recive-ul ul {
+	padding: 0;
+	margin: 0
+}
+.recive-ul li {
+	list-style: none;
+	border-top: 1px solid #D9D9D9;
+}
+.recive-ul li label {
+	padding: 5px 15px;
+	display: block
+}
+.recive-ul li:first-child {
+	border-top: 0 none;
+}
+.recive-form .input {
+	padding:0 5px;
+
+	
+	border-radius: 5px 0 0 5px;
+	width: 100%;
+	vertical-align: middle;
+	height: 40px;
+	border: 1px solid #ddd;
+	border-right-color: #fff;
+	font-size: 14px;
+	box-sizing: border-box;
+	color: #333;
+}
+.recive-form .input:focus {
+	outline: 0;
+	border-color: #ccc;
+	border-right-color: #fff;
+	
+}
+.recive-form {
+	box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	margin: 0 5px;
+}
+.recive-form .find {
+	width: 60px;
+	height: 40px;
+	background: #F73939 url(../wsimages/search.png) no-repeat center center;
+	text-indent: -99999px;
+	background-size:25px;
+	border: 1px solid #F73939;
+	border-radius: 0 5px 5px 0;
+	opacity:.8
+}
+.recive-form .input:focus + .find{opacity:1}
+.dialog {
+	border: 1px solid #aaaaaa;
+	background: #ffffff;
+	color: #222222;
+	z-index: 999;
+	position: fixed;
+	border-radius: 5px;
+	padding: 20px;
+	left: 50%;
+	top: 50%;
+	width: 260px;
+	margin-left: -150px;
+	margin-top: -120px;
+}
+.dialog-overlay {
+	background: rgba(0,0,0,.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 998
+}
+.dialog-box {
+	position: fixed;
+	bottom: 0;
+	min-height: 100px;
+	z-index: 999;
+	width: 98%;
+	background: #fff;
+	padding: 1%;
+}
+.dialog-box .icon-close {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: #ccc;
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	display: block;
+	text-decoration: none;
+	font-weight: 100
+}
+.dialog-box .close:hover {
+	color: #ec4d35;
+	border-color: #ec4d35
+}
+.dialog-box .dialog-title {
+	height: 22px;
+	font-weight: 700;
+	padding: 10px 0;
+	text-align: center
+}
+.fr {
+	float: right
+}
+.fl {
+	float: left
+}
+.weui_cell .icon-contact {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(../wsimages/icon-contact.png) no-repeat center center;
+	background-size: auto;
+	vertical-align: middle;
+	margin-left:10px;
+}
+
+.weui_cell .icon-minus {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: red;
+	border: 1px solid red;
+	border-radius: 30px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 100;
+		vertical-align:middle;
+
+}
+.weui_cell .icon-del {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 30px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 100;
+	vertical-align:middle;
+	
+	
+}
+.weui_cell .none{ display:none}
+.blue {
+	color: #438ed3 
+}
+.gray{ color:gray}
+.mt10 {
+	margin-top: 10px
+}
+.mr10{margin-right:10px}
+body .none {
+	display: none
+}
+.weui_cells_form .weui_cell_warn .weui_input::-webkit-input-placeholder {
+color:#E64340;
+}
+.d-box {
+	display: -webkit-box;  /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
+	display: -moz-box;    /* 老版本语法: Firefox (buggy) */
+	display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+	display: -webkit-flex;  /* 新版本语法： Chrome 21+ */
+	display: flex;       /* 新版本语法： Opera 12.1, Firefox 22+ */
+}
+
+.flex1 {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	-ms-flex: 1 0 0;
+	flex: 1 0 0;
+	display: block;
+}
+.upload-btn{ position:relative; z-index:0; background:#58c3f0; border-color:#58c3f0; color:#fff; width:100px; text-align:center; height:30px; line-height:30px; display:inline-block; border-radius:3px;}
+.upload-btn i{ display:inline-block; width:20px; height:20px; line-height:20px; vertical-align:middle; margin-right:5px; background:url(../wsimages/icon-upload.png)  no-repeat center center; background-size:contain}
+.upload-btn input{ opacity:0; width:100%; height:100%; position:absolute; z-index:1; left:0; top:0;filter:Alpha(opacity=0)}
+.weui_btn_area.d-box .weui_btn{ margin:0 5px;}
+.red{ color:red}
+.weui_cells_form .weui_cell_ft{ font-size:14px}
+.file-name{display:inline-block; overflow:hidden; height:30px; line-height:30px; position:relative; z-index:0; white-space:nowrap; text-overflow:ellipsis; vertical-align:middle; padding-right:25px; width:50%; padding-left:5px; font-size:12px; color:#666}
+.file-name i{ position:absolute; right:0; top:4px; z-index:1; background-color:#fff}

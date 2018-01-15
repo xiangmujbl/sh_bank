@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>用户管理-中国云签</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="header">
+  <div class="account" onClick="history.back(-1)"><i class="icon icon-arrowleft" ></i></div>
+  <div class="tit">用户管理</div>
+  <div class="menu"> <i class="icon icon-menu"></i>
+    <div class="nav"> <i class="icon-arrow"></i>
+      <ul>
+        <li><a href="index.html"><i class="icon icon-home"></i>首页</a></li>
+        <li><a href="notice.html"><i class="icon icon-sound"></i>公告提醒</a></li>
+        <li><a href="account.html"><i class="icon icon-user"></i>用户管理</a></li>
+        <li><a href="contract_archives.html"><i class="icon icon-book"></i>合同档案室</a></li>
+        <li><a href="contact.html"><i class="icon icon-tel"></i>联系我们</a></li>
+        <li><a href="share.html"><i class="icon icon-share"></i>分享关注</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="acc-banner setting-banner">
+    <div class="avatar"><img src="http://tp3.sinaimg.cn/1745928394/180/5721196167/0">
+    <div class="user-data">
+      <p><span class="name">沫沫</span> <i class="icon-verify"></i> 已认证</p>
+      <p><i class="icon-phone"></i> 18012957733 <a class="btn"  href="验证手机号.html">修改</a> </p>
+      </div>
+    </div>
+    <ul class="d-box">
+      <li class="flex1">
+        <p class="num">28</p>
+        <p>余额次数</p>
+      </li>
+      <li class="flex1">
+        <p class="num">28</p>
+        <p>扣除次数</p>
+      </li>
+      <li class="flex1">
+        <p class="num">28</p>
+        <p>购买次数</p>
+      </li>
+    </ul>
+  </div>
+  <ol class="list setting-list">
+    <li class="icon_setting_white"><a href="create_contract.html">已认证 <span class="red">发起签约<i class="icon icon-arrowright"></i></span> </a></li>
+  </ol>
+  <div class="user-info mt20">
+    <p>公司名称：江苏买卖网有限公司</p>
+    <p>个人姓名：孙伟</p>
+    <p>手机号：18012957733</p>
+  </div>
+  <ol class="list setting-list">
+    <li class="icon_setting_contact"><a href="sign_contact.html">联系人 <span> <i class="icon icon-arrowright"></i></span></a></li>
+    <li class="icon_setting_seal"><a href="sign_seal.html">图章 <span> <i class="icon icon-arrowright"></i></span></a></li>
+    <li class="icon_setting_pay_record"><a href="sign_pay_record.html">充值记录 <span> <i class="icon icon-arrowright"></i></span></a></li>
+    <li class="icon_setting_pay_history"><a href="sign_pay_history.html">消费明细 <span> <i class="icon icon-arrowright"></i></span></a></li>
+    <li class="icon_setting_pay"><a href="recharge.html">去充值 <span> <i class="icon icon-arrowright"></i></span></a></li>
+  </ol>
+  <ol class="list setting-list">
+    <li class="icon_setting_esc"><a href="logout.do">退出登录 <span><i class="icon icon-arrowright"></i></span> </a></li>
+  </ol>
+</div>
+<footer class="footer"> <a href=""><i class="icon-aboutus"></i>关于我们</a> <a href=""><i class="icon-contact"></i>联系我们</a> </footer>
+<script>
+      (function (win){
+      	var doc = win.document,
+      	html = doc.documentElement;
+      	var baseWidth = 720,
+      	grids = baseWidth / 100,
+      	resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+      	recalc = function(){
+      		var clientWidth = html.clientWidth || 320;
+      		if( clientWidth > 720 ){ clientWidth = 720 };
+      		html.style.fontSize = clientWidth / grids + 'px';
+      	};
+      	if (!doc.addEventListener) return;
+      	win.addEventListener(resizeEvt, recalc, false);
+      	doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(window);
+	  
+	  
+    </script>
+</body>
+</html>

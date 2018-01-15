@@ -1,0 +1,712 @@
+2017-10-22 10:33:41 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@544c2fa2: startup date [Sun Oct 22 10:33:41 CST 2017]; root of context hierarchy
+ 2017-10-22 10:33:41 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+ 2017-10-22 10:34:08 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]-[INFO] Building JPA container EntityManagerFactory for persistence unit 'uumsJPA'
+ 2017-10-22 10:34:08 [org.hibernate.annotations.common.Version]-[INFO] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+ 2017-10-22 10:34:08 [org.hibernate.Version]-[INFO] HHH000412: Hibernate Core {4.2.3.Final}
+ 2017-10-22 10:34:08 [org.hibernate.cfg.Environment]-[INFO] HHH000206: hibernate.properties not found
+ 2017-10-22 10:34:08 [org.hibernate.cfg.Environment]-[INFO] HHH000021: Bytecode provider name : javassist
+ 2017-10-22 10:34:08 [org.hibernate.ejb.Ejb3Configuration]-[INFO] HHH000204: Processing PersistenceUnitInfo [
+	name: uumsJPA
+	...]
+ 2017-10-22 10:34:24 [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator]-[INFO] HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+ 2017-10-22 10:34:24 [org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider]-[INFO] HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://192.168.10.72:3306/cbs3_bak
+ 2017-10-22 10:34:24 [org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider]-[INFO] HHH000046: Connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+ 2017-10-22 10:34:24 [org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider]-[INFO] HHH000006: Autocommit mode: true
+ 2017-10-22 10:34:24 [com.mchange.v2.log.MLog]-[INFO] MLog clients using log4j logging.
+ 2017-10-22 10:34:25 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:20:15 -0700; debug? true; trace: 10]
+ 2017-10-22 10:34:25 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@40f1bb0d [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@4041638a [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge2xp9riaki9t11uwkaw|b0aa68a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@19e02e00 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hge2xp9riaki9t11uwkaw|1cf85db2, jdbcUrl -> jdbc:mysql://192.168.10.72:3306/cbs3_bak, properties -> {user=******, password=******, autocommit=true, release_mode=auto} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hge2xp9riaki9t11uwkaw|12b512ef, numHelperThreads -> 3 ]
+ 2017-10-22 10:34:25 [org.hibernate.dialect.Dialect]-[INFO] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+ 2017-10-22 10:34:25 [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]-[INFO] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ 2017-10-22 10:34:25 [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]-[INFO] HHH000397: Using ASTQueryTranslatorFactory
+ 2017-10-22 10:34:25 [org.hibernate.validator.internal.util.Version]-[INFO] HV000001: Hibernate Validator 4.3.0.Final
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000228: Running hbm2ddl schema update
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000102: Fetching database metadata
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000396: Updating schema
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_attachment
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [extension, id, source, status, name, path, type, thumb_uri, uri]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_auth
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, auth_desc, update_time, auth_name, auth_type, category_code, auth_num]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_auth_category
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, sys_flag, category_name, create_time, category_code, category_desc]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_authority_contract
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [extension, id, authority_contract_path, original_filename]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_company_info
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, proxy_photo_id, company_name, company_type, business_license_no, app_id, business_image_id, reseve1]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_6ptvvf6exip7vxo6qhl33ry0p, fk_pwi487ncnmuix3hmxnlnvn9jg]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_6ptvvf6exip7vxo6qhl33ry0p, fk_pwi487ncnmuix3hmxnlnvn9jg, primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [sha1, type, sign_plaintext, creator, id, platform_id, title, contract_type, yunsign_flag, serial_num, otheruids, status, keyword, isdelete, mark, ispdfsign, opt_from, temp_number, operator, finishtime, turn_img_status, is_show, price, update_time, end_time, video_flag, create_time, pname, start_time, orderid, deadline, payment_type, parent_contract_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_gd2qhoprxrsrlr79fiw9afo95]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_gd2qhoprxrsrlr79fiw9afo95, index_appid_orderid, primary, serial_num]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_deduct_record
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [optfrom, bq_text, deduct_type, bill_num, type_code, id, consume_type, deduct_times, update_time, x_charge_type, deduct_sum, user_id, pay_id, deduct_status]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_br23g76uq67ywl8jplcpyymjt]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, fk_br23g76uq67ywl8jplcpyymjt]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_path
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [extension, id, original_file, contract_path, original_file_path, file_path, contractid, contract_serial_num, att_name, contract_id, type, original_filename]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, fk_25hbtmp0rkvroo7hwd3cyd4e4, fk_lmsg6mxldlcc4xy0y2j2494xl, index_2]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_template
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, platform_id, template_name, creat_time, status, file_path, user_id, app_id, file_name, original_name, template_num]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_15rwet64hq4n83mk7o00xggdh, fk_reference_26]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_15rwet64hq4n83mk7o00xggdh, primary, index_2]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_video
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, video_url, status, create_time, app_id, platform_user_name, order_id, video_code]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_custom_info
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, card_type, address, duty, phone_num, nickname, identity_card, name, proxy_idimg_a, proxy_idimg_b, app_id, reseve2, reseve1]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_15ahgn0ouhrw6bk44ohblumfl, fk_c3w2vp8bsnxwn6qrf40pcylea]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_15ahgn0ouhrw6bk44ohblumfl, primary, fk_c3w2vp8bsnxwn6qrf40pcylea]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_evidence
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [updatetime, e_type, appid, downloadtimes, creator_id, platformusername, id, user_name, title, e_order, e_serial, uploadtime, uploadtimestr, e_remark]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, ind_eorder]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_evidence_bind_attachment
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [attachment_path, certserial, updatetime, remark, signtimestamp, del_flag, toimgpath, downloadtimes, type, id, cert, uploadtime, evidence_id, file_hash, signature]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, evidence_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_evidence_user
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, remark, user_id, evidence_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, idx_evidence_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_external_data_import
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [sign_data, data_status, contract_sha1, sign_plaintext, id, sign_name, title, update_time, source, create_time, serial_num, orderid, sign_information, sign_time]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_idAuth_config
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, opt_time, status, opt_user_id, auth_service_times, auth_end_time, auth_type, service_type, serial_num, auth_use_times, app_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_idAuth_log
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [service_time, id, opt_time, auth_type, service_type, in_param, app_id, auth_config_id, out_param]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_identity
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [skin_css, company_id, binded_id, is_email_verified, status_time, type, password, regist_time, reseve1, id, platform_id, stop_info, is_mobile_verified, parent_id, srm_id, email_validate_code, last_login_time, status, platform_user_name, custom_id, moblie, is_admin, is_authentic, source, email, is_baoquan, account, uuid, wx_openid, business_admin]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_m7fdr6tg0yoidvm7q6r19680x, fk_d9xx8ijhhopn706kgvu87u4s, fk_k6fa4i4l829o62u35ghcjbgma, fk_m0ho7ql5klr170ce9drqtw9w6]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [ind_email, fk_m7fdr6tg0yoidvm7q6r19680x, fk_d9xx8ijhhopn706kgvu87u4s, ind_parentid, ind_bindid, primary, fk_k6fa4i4l829o62u35ghcjbgma, fk_m0ho7ql5klr170ce9drqtw9w6, ind_type, ind_platform_username, ind_mobile]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_identity_invite
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, point, invitor_id, invited_id, invite_time]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_interface
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, interface_desc, infterface_name, auth_num]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_invoice_info
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [register_address, bank_name, mail_address, remark, code, order_id, express, type, register_phone, mail_method, content, id, title, name, company, bank_account, express_delivery, mobile]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_myattn
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, create_time, attn_id, user_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_opt_log
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [message, id, detail, opt_time, level, opt_result, server_ip, in_param, opt_type, opt_from, out_param, opt_user_account, opt_app_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [in_opt_appid, primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_order_record
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [refusal_reason, remark, order_id, reseve1, trade_type, order_status, invoice_status, id, change_time, time, payplam_order_id, price, pay_method, commodity, verified, pay_way, create_time, ukey_id, user_id, package_id, operate_id, invoice_id, pay_platform_id, order_type]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [index_5, primary, index_3, index_4, index_2]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_pay_service
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, type_desc, type_name, type_contractname, type_code]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, type_code_2, type_code]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_pdf_info
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, plateform_id, ucid, special_character, sign_ui_type, serial_num, author_id, user_id, number, contract_id, app_id, orderid]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [admin_role_id, is_check_platform, ftp_pwd, link_name, status, ftp_name, default_role_id, is_sms_use, business_image_id, type, is_ys_creates, link_tel, id, app_secret_key, call_type, company_name, email, address, program, create_time, business_license_no, is_pdfsign, ftp_path, app_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_m698tj5r5c2arvb2kge9tdv2y]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [in_platform_appid, fk_m698tj5r5c2arvb2kge9tdv2y, primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_apply
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [apply_time, reason, status, identity_card, identity_card_image_id, platform_user_name, type, linktel, id, platform_id, company_name, email, address, serial_num, business_license_no, audit_result_mark, linkname]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_7, fk_reference_34]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_reference_34, primary, index_2]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_apply_record
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [content, id, status, remark, email, company_name, department, create_time, mobile, contacts]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_call_cert
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, cert_url, cert_name, app_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_callback
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, forward_url, update_time, interface_id, callback_url, app_id, callback_type, return_url]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_reference_44, primary, fk_6ii6vyjo3ngkqfy3mj5ec5b2v]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_role
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, platform_id, role_id, create_time, type]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_protect_info
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, title, organization, protect_time, status, userid, serial_num, expire_time]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_ra_cert
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, revok_time, cert_num, status, serial_num, user_id, cert_content, application_time]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_40]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, index_2]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_request_log
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [request_times, id, request_type, month, year, user_id, app_id, hour, day, ip]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_role
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, update_time, role_desc, role_type, role_name]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_role_auth_relation
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, role_id, auth_id, ralation_type]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_37]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, fk_reference_37]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_seal
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [cut_path, id, seal_path, related_id, is_active, bg_removed_path, original_path, seal_um, type, seal_name, seal_num]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_security
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, storepass, data_password, certificate_path, alias, create_time, keystore_path, keypass]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [alias, primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sign_record
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [signdata, sign_timestamp, sign_status, sms_serial_num, alias, sign_type, cert_id, orignal_filename, prev_sha1, contract_id, mark, sign_mode, password, singer_id, id, pass_encoded, certificate_path, current_sha1, author_id, sha1_digest, sign_information, sign_time]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_studo2ads3lqyp33atl8gjl3m, fk_r6afx2yt63px0avnyjo0s0upq, fk_g7xbodddi9ciyrjdgwvvaps1t]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [ind_sinerid, fk_studo2ads3lqyp33atl8gjl3m, primary, ind_signtype, contract_id, fk_r6afx2yt63px0avnyjo0s0upq, fk_g7xbodddi9ciyrjdgwvvaps1t]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_signing_room
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, platform, status, email, company_name, user_id, dateline, linktel, linkname]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_info
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, send_time, sms_serial_num, sms_code, sms_content_sha1, contract_id, sms_content_id, sms_content, custom_id]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_nfb5dgeb17uvh57xic4dudv5r, fk_mcgs9fak2f8p3xkusmxcyalp3, fk_3j15lak4a62oxjaxxxr8fcodh]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_nfb5dgeb17uvh57xic4dudv5r, fk_mcgs9fak2f8p3xkusmxcyalp3, primary, fk_73tot72qv5daggdf4mk1mgero, fk_3j15lak4a62oxjaxxxr8fcodh]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_record
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [message, id, send_time, receive_result, optfrom, app_id, mobile]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_template
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [content, id, sms_type, operate_type, update_time, message_type]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_trans
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [transtype, id, create_time, appid, type]
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:26 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_ukey_info
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [remark, status, subject, type, express, id, starting_date, cert_num, bind_time, user_id, cert_content, expiring_date, express_delivery, signature]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_dhld7dofjcteetrvums63f8h]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_dhld7dofjcteetrvums63f8h, primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_upgrade_transition
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, old_appid, upgrade_time, old_appkey, new_appid]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [id]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_account
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, banlance, user_id, paycode]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_2ali4t1h9o2gk3qrs8jdha794]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_2ali4t1h9o2gk3qrs8jdha794, primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_authority
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [auth_time, id, platform_id, auth_end_time, auth_type, create_time, serial_num, auth_img_id, author_id, user_id, auth_contract_id]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_role_relation
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, role_id, user_id]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_42]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_reference_42, primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_service
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, pay_code, pay_type, user_id, expired_date, charging_times]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_video_sign
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, revers, register_time, status, app_id, platform_user_name, order_id, video_code]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_vpt_config
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, limit_day_times, vpt_name, warning_interval_time, vpt_day_times, warning_mobbile, vpt_code, vpt_hour_times, limit_hour_times]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_yunsign_template
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, form_url, update_time, stop_time, status, name, create_time, start_time, user_id, url, kind]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[ERROR] HHH000388: Unsuccessful: alter table c_sign_record add index FK_e16hu1dq5pcg7gx61o7pto1ce (sms_serial_num), add constraint FK_e16hu1dq5pcg7gx61o7pto1ce foreign key (sms_serial_num) references c_sms_info (id)
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[ERROR] Cannot add foreign key constraint
+ 2017-10-22 10:34:27 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000232: Schema update complete
+ 2017-10-22 10:34:27 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-10-22 10:34:27 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-10-22 10:34:27 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-10-22 10:34:27 [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7260e94b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,apsIface,noteSerive,contractIface,contractService,contractTempleteService,createContractService,downloadService,internetFinanceCreate,signContractService,templeteIface,depositoryIface,evidenceService,contractDeductRecordService,feeIface,idAuthJudgeService,invoiceInfoService,localCreateContractService,orderRecordService,payService,platformRoleService,smsRecordService,userAccountService,userService,serialIface,internelIface,userAuthDao,logService,myAttnService,platformService,sealService,ukeyService,upgradeService,userAuthServiceImpl,userBaseService,usersService,wXService,userIface,videoSignService,videoIface,vptService,comSignService,cssIface,customizeSign,entityManagerFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,evidenceBindAttachmentDao,signRecordDao,attachmentInfoDao,userAuthorityDao,VPTConfigDao,yunsignTemplateDao,myAttnDao,contractPathDao,userAccountDao,smsTransDao,invoiceInfoDao,externalDataImportDao,evidenceUserDao,videoSignDao,userServiceDao,platformCallbackDao,protectInfoDao,platformCallCertDao,customInfoDao,payServiceDao,identityInviteInfoDao,platformDao,idAuthConfigDao,evidenceDao,ukeyInfoDao,companyInfoDao,userRoleRelationDao,platformApplyDao,upgradeDao,contractDeductRecordDao,securityDao,platformApplyRecordDao,orderRecordDao,identityDao,optLogDao,signingRoomDao,authorityContractDao,roleDao,messageDao,contractDao,pdfInfoDao,requestLogDao,sealInfoDao,platformRoleDao,smsRecordDao,idAuthLogDao,smsInfoDao,contractVideoDao,contractTemplateDao,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ 2017-10-22 10:34:27 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:27 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 123.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:28 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 92.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:28 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 88.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 106.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 122.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 90.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 79.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 97.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 87.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 105.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 79.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 97.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 84.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 116.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 137.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 108.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 123.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 106.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 108.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 116.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 136.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 99.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 137.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 127.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 133.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 116.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 153.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 125.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 152.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 158.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 142.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 148.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 125.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 162.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 147.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 138.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 144.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 120.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 93.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 103.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 93.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 111.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 83.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 108.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 83.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 113.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 130.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 103.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 121.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 93.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 107.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 92.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 95.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 109.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 97.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 105.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:53 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:54 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 170.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:54 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 214.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 10:34:54 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 261.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:41:50 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@55cb5fea: startup date [Sun Oct 22 13:41:50 CST 2017]; root of context hierarchy
+ 2017-10-22 13:41:51 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader]-[INFO] Loading XML bean definitions from class path resource [applicationContext.xml]
+ 2017-10-22 13:41:52 [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]-[INFO] Building JPA container EntityManagerFactory for persistence unit 'uumsJPA'
+ 2017-10-22 13:41:52 [org.hibernate.annotations.common.Version]-[INFO] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+ 2017-10-22 13:41:52 [org.hibernate.Version]-[INFO] HHH000412: Hibernate Core {4.2.3.Final}
+ 2017-10-22 13:41:52 [org.hibernate.cfg.Environment]-[INFO] HHH000206: hibernate.properties not found
+ 2017-10-22 13:41:52 [org.hibernate.cfg.Environment]-[INFO] HHH000021: Bytecode provider name : javassist
+ 2017-10-22 13:41:52 [org.hibernate.ejb.Ejb3Configuration]-[INFO] HHH000204: Processing PersistenceUnitInfo [
+	name: uumsJPA
+	...]
+ 2017-10-22 13:41:53 [org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator]-[INFO] HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+ 2017-10-22 13:41:53 [org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider]-[INFO] HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://192.168.10.72:3306/cbs3_bak
+ 2017-10-22 13:41:53 [org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider]-[INFO] HHH000046: Connection properties: {user=root, password=****, autocommit=true, release_mode=auto}
+ 2017-10-22 13:41:53 [org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider]-[INFO] HHH000006: Autocommit mode: true
+ 2017-10-22 13:41:53 [com.mchange.v2.log.MLog]-[INFO] MLog clients using log4j logging.
+ 2017-10-22 13:41:53 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:20:15 -0700; debug? true; trace: 10]
+ 2017-10-22 13:41:53 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@74df265f [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@80a5337a [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge2xp9rih9lnw2rbe3u|67fb19a3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e056bcb7 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1hge2xp9rih9lnw2rbe3u|3362f02f, jdbcUrl -> jdbc:mysql://192.168.10.72:3306/cbs3_bak, properties -> {user=******, password=******, autocommit=true, release_mode=auto} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1hge2xp9rih9lnw2rbe3u|35730b46, numHelperThreads -> 3 ]
+ 2017-10-22 13:41:53 [org.hibernate.dialect.Dialect]-[INFO] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+ 2017-10-22 13:41:54 [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]-[INFO] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+ 2017-10-22 13:41:54 [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]-[INFO] HHH000397: Using ASTQueryTranslatorFactory
+ 2017-10-22 13:41:54 [org.hibernate.validator.internal.util.Version]-[INFO] HV000001: Hibernate Validator 4.3.0.Final
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000228: Running hbm2ddl schema update
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000102: Fetching database metadata
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000396: Updating schema
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_attachment
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [extension, id, source, status, name, path, type, thumb_uri, uri]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_auth
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, auth_desc, update_time, auth_name, auth_type, category_code, auth_num]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_auth_category
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, sys_flag, category_name, create_time, category_code, category_desc]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_authority_contract
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [extension, id, authority_contract_path, original_filename]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_company_info
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, proxy_photo_id, company_name, company_type, business_license_no, app_id, business_image_id, reseve1]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_6ptvvf6exip7vxo6qhl33ry0p, fk_pwi487ncnmuix3hmxnlnvn9jg]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_6ptvvf6exip7vxo6qhl33ry0p, fk_pwi487ncnmuix3hmxnlnvn9jg, primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [sha1, type, sign_plaintext, creator, id, platform_id, title, contract_type, yunsign_flag, serial_num, otheruids, status, keyword, isdelete, mark, ispdfsign, opt_from, temp_number, operator, finishtime, turn_img_status, is_show, price, update_time, end_time, video_flag, create_time, pname, start_time, orderid, deadline, payment_type, parent_contract_id]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_gd2qhoprxrsrlr79fiw9afo95]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_gd2qhoprxrsrlr79fiw9afo95, index_appid_orderid, primary, serial_num]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_deduct_record
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [optfrom, bq_text, deduct_type, bill_num, type_code, id, consume_type, deduct_times, update_time, x_charge_type, deduct_sum, user_id, pay_id, deduct_status]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_br23g76uq67ywl8jplcpyymjt]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, fk_br23g76uq67ywl8jplcpyymjt]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_path
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [extension, id, original_file, contract_path, original_file_path, file_path, contractid, contract_serial_num, att_name, contract_id, type, original_filename]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, fk_25hbtmp0rkvroo7hwd3cyd4e4, fk_lmsg6mxldlcc4xy0y2j2494xl, index_2]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_template
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, platform_id, template_name, creat_time, status, file_path, user_id, app_id, file_name, original_name, template_num]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_15rwet64hq4n83mk7o00xggdh, fk_reference_26]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_15rwet64hq4n83mk7o00xggdh, primary, index_2]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_contract_video
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, video_url, status, create_time, app_id, platform_user_name, order_id, video_code]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_custom_info
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, card_type, address, duty, phone_num, nickname, identity_card, name, proxy_idimg_a, proxy_idimg_b, app_id, reseve2, reseve1]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_15ahgn0ouhrw6bk44ohblumfl, fk_c3w2vp8bsnxwn6qrf40pcylea]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_15ahgn0ouhrw6bk44ohblumfl, primary, fk_c3w2vp8bsnxwn6qrf40pcylea]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_evidence
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [updatetime, e_type, appid, downloadtimes, creator_id, platformusername, id, user_name, title, e_order, e_serial, uploadtime, uploadtimestr, e_remark]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, ind_eorder]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_evidence_bind_attachment
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [attachment_path, certserial, updatetime, remark, signtimestamp, del_flag, toimgpath, downloadtimes, type, id, cert, uploadtime, evidence_id, file_hash, signature]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, evidence_id]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_evidence_user
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, remark, user_id, evidence_id]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, idx_evidence_id]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_external_data_import
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [sign_data, data_status, contract_sha1, sign_plaintext, id, sign_name, title, update_time, source, create_time, serial_num, orderid, sign_information, sign_time]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_idAuth_config
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, opt_time, status, opt_user_id, auth_service_times, auth_end_time, auth_type, service_type, serial_num, auth_use_times, app_id]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_idAuth_log
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [service_time, id, opt_time, auth_type, service_type, in_param, app_id, auth_config_id, out_param]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_identity
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [skin_css, company_id, binded_id, is_email_verified, status_time, type, password, regist_time, reseve1, id, platform_id, stop_info, is_mobile_verified, parent_id, srm_id, email_validate_code, last_login_time, status, platform_user_name, custom_id, moblie, is_admin, is_authentic, source, email, is_baoquan, account, uuid, wx_openid, business_admin]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_m7fdr6tg0yoidvm7q6r19680x, fk_d9xx8ijhhopn706kgvu87u4s, fk_k6fa4i4l829o62u35ghcjbgma, fk_m0ho7ql5klr170ce9drqtw9w6]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [ind_email, fk_m7fdr6tg0yoidvm7q6r19680x, fk_d9xx8ijhhopn706kgvu87u4s, ind_parentid, ind_bindid, primary, fk_k6fa4i4l829o62u35ghcjbgma, fk_m0ho7ql5klr170ce9drqtw9w6, ind_type, ind_platform_username, ind_mobile]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_identity_invite
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, point, invitor_id, invited_id, invite_time]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_interface
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, interface_desc, infterface_name, auth_num]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_invoice_info
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [register_address, bank_name, mail_address, remark, code, order_id, express, type, register_phone, mail_method, content, id, title, name, company, bank_account, express_delivery, mobile]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_myattn
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, create_time, attn_id, user_id]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_opt_log
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [message, id, detail, opt_time, level, opt_result, server_ip, in_param, opt_type, opt_from, out_param, opt_user_account, opt_app_id]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [in_opt_appid, primary]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_order_record
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [refusal_reason, remark, order_id, reseve1, trade_type, order_status, invoice_status, id, change_time, time, payplam_order_id, price, pay_method, commodity, verified, pay_way, create_time, ukey_id, user_id, package_id, operate_id, invoice_id, pay_platform_id, order_type]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [index_5, primary, index_3, index_4, index_2]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_pay_service
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, type_desc, type_name, type_contractname, type_code]
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:54 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, type_code_2, type_code]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_pdf_info
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, plateform_id, ucid, special_character, sign_ui_type, serial_num, author_id, user_id, number, contract_id, app_id, orderid]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [admin_role_id, is_check_platform, ftp_pwd, link_name, status, ftp_name, default_role_id, is_sms_use, business_image_id, type, is_ys_creates, link_tel, id, app_secret_key, call_type, company_name, email, address, program, create_time, business_license_no, is_pdfsign, ftp_path, app_id]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_m698tj5r5c2arvb2kge9tdv2y]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [in_platform_appid, fk_m698tj5r5c2arvb2kge9tdv2y, primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_apply
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [apply_time, reason, status, identity_card, identity_card_image_id, platform_user_name, type, linktel, id, platform_id, company_name, email, address, serial_num, business_license_no, audit_result_mark, linkname]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_7, fk_reference_34]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_reference_34, primary, index_2]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_apply_record
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [content, id, status, remark, email, company_name, department, create_time, mobile, contacts]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_call_cert
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, cert_url, cert_name, app_id]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_callback
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, forward_url, update_time, interface_id, callback_url, app_id, callback_type, return_url]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_reference_44, primary, fk_6ii6vyjo3ngkqfy3mj5ec5b2v]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_platform_role
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, platform_id, role_id, create_time, type]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_protect_info
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, title, organization, protect_time, status, userid, serial_num, expire_time]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_ra_cert
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, revok_time, cert_num, status, serial_num, user_id, cert_content, application_time]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_40]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, index_2]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_request_log
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [request_times, id, request_type, month, year, user_id, app_id, hour, day, ip]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_role
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, update_time, role_desc, role_type, role_name]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_role_auth_relation
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, role_id, auth_id, ralation_type]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_37]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary, fk_reference_37]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_seal
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [cut_path, id, seal_path, related_id, is_active, bg_removed_path, original_path, seal_um, type, seal_name, seal_num]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_security
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, storepass, data_password, certificate_path, alias, create_time, keystore_path, keypass]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [alias, primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sign_record
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [signdata, sign_timestamp, sign_status, sms_serial_num, alias, sign_type, cert_id, orignal_filename, prev_sha1, contract_id, mark, sign_mode, password, singer_id, id, pass_encoded, certificate_path, current_sha1, author_id, sha1_digest, sign_information, sign_time]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_studo2ads3lqyp33atl8gjl3m, fk_r6afx2yt63px0avnyjo0s0upq, fk_g7xbodddi9ciyrjdgwvvaps1t]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [ind_sinerid, fk_studo2ads3lqyp33atl8gjl3m, primary, ind_signtype, contract_id, fk_r6afx2yt63px0avnyjo0s0upq, fk_g7xbodddi9ciyrjdgwvvaps1t]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_signing_room
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, platform, status, email, company_name, user_id, dateline, linktel, linkname]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_info
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, send_time, sms_serial_num, sms_code, sms_content_sha1, contract_id, sms_content_id, sms_content, custom_id]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_nfb5dgeb17uvh57xic4dudv5r, fk_mcgs9fak2f8p3xkusmxcyalp3, fk_3j15lak4a62oxjaxxxr8fcodh]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_nfb5dgeb17uvh57xic4dudv5r, fk_mcgs9fak2f8p3xkusmxcyalp3, primary, fk_73tot72qv5daggdf4mk1mgero, fk_3j15lak4a62oxjaxxxr8fcodh]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_record
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [message, id, send_time, receive_result, optfrom, app_id, mobile]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_template
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [content, id, sms_type, operate_type, update_time, message_type]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_sms_trans
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [transtype, id, create_time, appid, type]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_ukey_info
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [remark, status, subject, type, express, id, starting_date, cert_num, bind_time, user_id, cert_content, expiring_date, express_delivery, signature]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_dhld7dofjcteetrvums63f8h]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_dhld7dofjcteetrvums63f8h, primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_upgrade_transition
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, old_appid, upgrade_time, old_appkey, new_appid]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [id]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_account
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, banlance, user_id, paycode]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_2ali4t1h9o2gk3qrs8jdha794]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_2ali4t1h9o2gk3qrs8jdha794, primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_authority
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [auth_time, id, platform_id, auth_end_time, auth_type, create_time, serial_num, auth_img_id, author_id, user_id, auth_contract_id]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_role_relation
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, role_id, user_id]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: [fk_reference_42]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [fk_reference_42, primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_user_service
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, pay_code, pay_type, user_id, expired_date, charging_times]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_video_sign
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, revers, register_time, status, app_id, platform_user_name, order_id, video_code]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_vpt_config
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, limit_day_times, vpt_name, warning_interval_time, vpt_day_times, warning_mobbile, vpt_code, vpt_hour_times, limit_hour_times]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000261: Table found: cbs3_bak.c_yunsign_template
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000037: Columns: [id, form_url, update_time, stop_time, status, name, create_time, start_time, user_id, url, kind]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000108: Foreign keys: []
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.TableMetadata]-[INFO] HHH000126: Indexes: [primary]
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[ERROR] HHH000388: Unsuccessful: alter table c_sign_record add index FK_e16hu1dq5pcg7gx61o7pto1ce (sms_serial_num), add constraint FK_e16hu1dq5pcg7gx61o7pto1ce foreign key (sms_serial_num) references c_sms_info (id)
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[ERROR] Cannot add foreign key constraint
+ 2017-10-22 13:41:55 [org.hibernate.tool.hbm2ddl.SchemaUpdate]-[INFO] HHH000232: Schema update complete
+ 2017-10-22 13:41:55 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-10-22 13:41:55 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-10-22 13:41:55 [org.springframework.context.support.ClassPathXmlApplicationContext]-[INFO] Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2017-10-22 13:41:55 [org.springframework.beans.factory.support.DefaultListableBeanFactory]-[INFO] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@195b0c83: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,apsIface,noteSerive,contractIface,contractService,contractTempleteService,createContractService,downloadService,internetFinanceCreate,signContractService,templeteIface,depositoryIface,evidenceService,contractDeductRecordService,feeIface,idAuthJudgeService,invoiceInfoService,localCreateContractService,orderRecordService,payService,platformRoleService,smsRecordService,userAccountService,userService,serialIface,internelIface,userAuthDao,logService,myAttnService,platformService,sealService,ukeyService,upgradeService,userAuthServiceImpl,userBaseService,usersService,wXService,userIface,videoSignService,videoIface,vptService,comSignService,cssIface,customizeSign,entityManagerFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,evidenceBindAttachmentDao,protectInfoDao,platformRoleDao,videoSignDao,userAuthorityDao,messageDao,requestLogDao,evidenceDao,orderRecordDao,sealInfoDao,companyInfoDao,myAttnDao,externalDataImportDao,smsTransDao,contractDao,identityInviteInfoDao,signRecordDao,contractPathDao,identityDao,idAuthLogDao,smsInfoDao,evidenceUserDao,invoiceInfoDao,signingRoomDao,userAccountDao,yunsignTemplateDao,attachmentInfoDao,securityDao,authorityContractDao,userRoleRelationDao,platformCallCertDao,platformApplyDao,payServiceDao,platformDao,userServiceDao,roleDao,contractDeductRecordDao,customInfoDao,contractVideoDao,contractTemplateDao,upgradeDao,smsRecordDao,VPTConfigDao,ukeyInfoDao,pdfInfoDao,idAuthConfigDao,platformApplyRecordDao,optLogDao,platformCallbackDao,org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor#0,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+ 2017-10-22 13:41:55 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:41:55 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 123.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:41:56 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 92.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:41:56 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 88.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 106.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 122.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 90.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 79.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 97.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 87.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 105.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 79.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 97.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 84.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 116.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 106.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 108.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 123.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 108.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 116.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 136.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 99.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 137.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 142.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 148.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 137.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 100.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 127.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 133.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 125.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 162.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 147.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 138.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 144.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 116.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 153.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 110.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 125.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 152.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 158.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 120.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 93.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 103.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 83.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 108.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 93.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 111.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 83.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 113.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 130.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 103.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 121.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 93.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 107.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 115.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 96.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 92.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 95.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 109.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 97.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 105.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 101.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:21 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 170.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:22 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 214.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:42:22 [org.hibernate.hql.internal.ast.HqlSqlWalker]-[WARN] [DEPRECATION] Encountered positional parameter near line 1, column 261.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+ 2017-10-22 13:47:02 [com.mmec.centerService.contractModule.service.ContractRMIServiceImpl]-[INFO] queryContract input parameters:{appId=8KD7Ssuzb2, ucid=kay2017102020, orderId=2017102020}
+ 2017-10-22 13:47:02 [com.mmec.centerService.contractModule.service.impl.ContractServiceImpl]-[INFO] jsonRecord===[{"cardId":"320123199101070039","businessLicenseNo":"yh2017102020","remark":"","signerCompanyName":"yh2017102020","signerId":"29","signStatus":"1","signerName":"yh2017102020","signUserType":"2","signMode":"1","authorId":"0","bindedId":"30","signerName2":"杨凯","plateformUserName":"yh2017102020","signTime":"2017-10-20 21:10:46","mobileNum":"13913351032","email":"472484793@qq.com","mobile":"13913351032"},{"cardId":"320123199101070039","businessLicenseNo":"kay2017102020","remark":"","signerCompanyName":"kay2017102020","signerId":"31","signStatus":"0","signerName":"kay2017102020","signUserType":"2","signMode":"0","authorId":"0","bindedId":"0","signerName2":"杨凯","plateformUserName":"kay2017102020","signTime":"","mobileNum":"13913351032","email":"472484793@qq.com","mobile":"13913351032"}]
+ 2017-10-22 13:47:03 [com.mmec.centerService.userModule.service.UserRMIServiceImpl]-[INFO] userQuery,param:{appId=8KD7Ssuzb2, optFrom=MMEC, platformUserName=kay2017102020}
+ReturnData(retCode:0000, desc:返回成功, descEn:success, pojo:{"id":31,"optFrom":"MMEC","platformUserName":"kay2017102020","account":"kay2017102020_e1508502186739","mobile":"13913351032","email":"472484793@qq.com","type":2,"emailValidate":0,"mobileValidate":0,"checkState":0,"status":0,"activeTime":"2017-10-20 08:23:07","isAdmin":0,"businessAdmin":"0","businessNo":"kay2017102020","enterpriseid":306750,"enterprisename":"kay2017102020","enterprisetype":"","contractroomCheck":1,"userName":"杨凯","name":"杨凯","identityCard":"320123199101070039","cardType":"1","phoneNumber":"","shieldValidate":"0"})
+ 2017-10-22 13:47:59 [com.mmec.centerService.userModule.service.UserRMIServiceImpl]-[INFO] certLogin,param:{appId=8KD7Ssuzb2, certNum=53ba47b620c8420317ac5838fc6cccdc, optFrom=MMEC, userId=kay2017102020, shbank=true, certContent=MIIDwzCCAqugAwIBAgIQU7pHtiDIQgMXrFg4/GzM3DANBgkqhkiG9w0BAQUFADBkMQswCQYD
+VQQGEwJDTjE6MDgGA1UEChMxRWFzdC1aaG9uZ3h1biBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkg
+Q2VudGVyIENPLkxURDEZMBcGA1UEAxMQRWFzdC1aaG9uZ3h1biBDQTAeFw0xNzEwMTYwNzM5
+MTBaFw0xODEwMTUxNjAwMDBaMD8xCzAJBgNVBAYTAkNOMTAwLgYDVQQDDCfmsZ/oi4/kubDl
+jZbnvZHnlLXlrZDllYbliqHmnInpmZDlhazlj7gwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJ
+AoGBAKlWxPcpOJ3z0CdNcHav7BtNP7E6oAo3EhIVFF49fJcFMJ3qEzxqWnmQCzMZq25x9I7k
+8poPajTxjQYCQwhYjCadrupwfDorYKSZ9Hle5YsEY8z4JPx/876dFfmGprRXWI68wiqEsNhx
+zo74Xw+buSo0IZsgsbx3mrg9TBIVWMdnAgMBAAGjggEYMIIBFDBiBggrBgEFBQcBAQRWMFQw
+KwYIKwYBBQUHMAKGH2h0dHA6Ly93d3cuZXpjYS5vcmcvY2Fpc3N1ZS5odG0wJQYIKwYBBQUH
+MAGGGWh0dHA6Ly93d3cuZXpjYS5vcmc6MjA0NDMwHwYDVR0jBBgwFoAUv+S8OGISOuUo8D5r
+TcL8BuMkGAUwCQYDVR0TBAIwADAyBgNVHR8EKzApMCegJaAjhiFodHRwOi8vd3d3LnRqLWNh
+Lm5ldC9jcmwvY3JsMS5jcmwwCwYDVR0PBAQDAgPIMCIGBipWFQEBAQQYExY9NGU2ZDRlNjg1
+YTU0NjM3NzRkNTQ9MB0GA1UdDgQWBBQ+P3tJ+nLEdmYbykoQfJa6wOBylTANBgkqhkiG9w0B
+AQUFAAOCAQEAJjdwqfU9KK3qMm192IYEYJ9OouAB6uqh5yLTwstO3/aORlWXZFl1599SuuSo
+qvJNQWDF0rHpwfr/XDC5ZrLzd7s+2mAFns3f0KK1RVTnBoBoCH+iNRz1zyoZDA6+hb7LlXjd
+tqzP7xgboZI7uEcN5llMIbam+II++4nJEESh+pvtf8oZpiIoUb7po4Bc19jQ0DZ3aCbVlejL
+nOci+l9s+nTDo8DsBlg11ZcVdb7yPWbn54icLUHYU1m62EmHANSfD6heqgzHLPSWtyd6YGen
+0s2RKF2AHAEvva012lq5P4tgxW90UPdN+5eu1VbNgXvH6FLOgKclg9od6dzB44do+A==}
+ReturnData(retCode:0000, desc:返回成功, descEn:success, pojo:)
+ 2017-10-22 13:48:03 [com.mmec.centerService.feeModule.service.SerialServiceImpl]-[INFO] returnData from MMEC:{"code":"0000","desc":"返回成功","resultData":""}
+ 2017-10-22 13:49:43 [com.mmec.centerService.feeModule.service.SerialServiceImpl]-[INFO] returnData from MMEC:平台编号appId不能为空
+ 2017-10-22 13:49:46 [com.mmec.centerService.contractModule.service.ContractRMIServiceImpl]-[INFO] queryContract input parameters:{appId=8KD7Ssuzb2, ucid=kay2017102020, orderId=2017102020}
+ 2017-10-22 13:49:46 [com.mmec.centerService.contractModule.service.impl.ContractServiceImpl]-[INFO] jsonRecord===[{"cardId":"320123199101070039","businessLicenseNo":"yh2017102020","remark":"","signerCompanyName":"yh2017102020","signerId":"29","signStatus":"1","signerName":"yh2017102020","signUserType":"2","signMode":"1","authorId":"0","bindedId":"30","signerName2":"杨凯","plateformUserName":"yh2017102020","signTime":"2017-10-20 21:10:46","mobileNum":"13913351032","email":"472484793@qq.com","mobile":"13913351032"},{"cardId":"320123199101070039","businessLicenseNo":"kay2017102020","remark":"","signerCompanyName":"kay2017102020","signerId":"31","signStatus":"0","signerName":"kay2017102020","signUserType":"2","signMode":"0","authorId":"0","bindedId":"0","signerName2":"杨凯","plateformUserName":"kay2017102020","signTime":"","mobileNum":"13913351032","email":"472484793@qq.com","mobile":"13913351032"}]
+ 2017-10-22 13:49:46 [com.mmec.centerService.userModule.service.UserRMIServiceImpl]-[INFO] userQuery,param:{appId=8KD7Ssuzb2, optFrom=MMEC, platformUserName=kay2017102020}
+ReturnData(retCode:0000, desc:返回成功, descEn:success, pojo:{"id":31,"optFrom":"MMEC","platformUserName":"kay2017102020","account":"kay2017102020_e1508502186739","mobile":"13913351032","email":"472484793@qq.com","type":2,"emailValidate":0,"mobileValidate":0,"checkState":0,"status":0,"activeTime":"2017-10-20 08:23:07","isAdmin":0,"businessAdmin":"0","businessNo":"kay2017102020","enterpriseid":306750,"enterprisename":"kay2017102020","enterprisetype":"","contractroomCheck":1,"userName":"杨凯","name":"杨凯","identityCard":"320123199101070039","cardType":"1","phoneNumber":"","shieldValidate":"0"})
+ 2017-10-22 14:00:33 [com.mmec.centerService.userModule.service.UserRMIServiceImpl]-[INFO] certLogin,param:{appId=8KD7Ssuzb2, certNum=53ba47b620c8420317ac5838fc6cccdc, optFrom=MMEC, userId=kay2017102020, shbank=true, certContent=MIIDwzCCAqugAwIBAgIQU7pHtiDIQgMXrFg4/GzM3DANBgkqhkiG9w0BAQUFADBkMQswCQYD
+VQQGEwJDTjE6MDgGA1UEChMxRWFzdC1aaG9uZ3h1biBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkg
+Q2VudGVyIENPLkxURDEZMBcGA1UEAxMQRWFzdC1aaG9uZ3h1biBDQTAeFw0xNzEwMTYwNzM5
+MTBaFw0xODEwMTUxNjAwMDBaMD8xCzAJBgNVBAYTAkNOMTAwLgYDVQQDDCfmsZ/oi4/kubDl
+jZbnvZHnlLXlrZDllYbliqHmnInpmZDlhazlj7gwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJ
+AoGBAKlWxPcpOJ3z0CdNcHav7BtNP7E6oAo3EhIVFF49fJcFMJ3qEzxqWnmQCzMZq25x9I7k
+8poPajTxjQYCQwhYjCadrupwfDorYKSZ9Hle5YsEY8z4JPx/876dFfmGprRXWI68wiqEsNhx
+zo74Xw+buSo0IZsgsbx3mrg9TBIVWMdnAgMBAAGjggEYMIIBFDBiBggrBgEFBQcBAQRWMFQw
+KwYIKwYBBQUHMAKGH2h0dHA6Ly93d3cuZXpjYS5vcmcvY2Fpc3N1ZS5odG0wJQYIKwYBBQUH
+MAGGGWh0dHA6Ly93d3cuZXpjYS5vcmc6MjA0NDMwHwYDVR0jBBgwFoAUv+S8OGISOuUo8D5r
+TcL8BuMkGAUwCQYDVR0TBAIwADAyBgNVHR8EKzApMCegJaAjhiFodHRwOi8vd3d3LnRqLWNh
+Lm5ldC9jcmwvY3JsMS5jcmwwCwYDVR0PBAQDAgPIMCIGBipWFQEBAQQYExY9NGU2ZDRlNjg1
+YTU0NjM3NzRkNTQ9MB0GA1UdDgQWBBQ+P3tJ+nLEdmYbykoQfJa6wOBylTANBgkqhkiG9w0B
+AQUFAAOCAQEAJjdwqfU9KK3qMm192IYEYJ9OouAB6uqh5yLTwstO3/aORlWXZFl1599SuuSo
+qvJNQWDF0rHpwfr/XDC5ZrLzd7s+2mAFns3f0KK1RVTnBoBoCH+iNRz1zyoZDA6+hb7LlXjd
+tqzP7xgboZI7uEcN5llMIbam+II++4nJEESh+pvtf8oZpiIoUb7po4Bc19jQ0DZ3aCbVlejL
+nOci+l9s+nTDo8DsBlg11ZcVdb7yPWbn54icLUHYU1m62EmHANSfD6heqgzHLPSWtyd6YGen
+0s2RKF2AHAEvva012lq5P4tgxW90UPdN+5eu1VbNgXvH6FLOgKclg9od6dzB44do+A==}
+ReturnData(retCode:0000, desc:返回成功, descEn:success, pojo:)
+ 2017-10-22 14:00:33 [com.mmec.centerService.feeModule.service.SerialServiceImpl]-[INFO] returnData from MMEC:{"code":"0000","desc":"返回成功","resultData":""}
+ 

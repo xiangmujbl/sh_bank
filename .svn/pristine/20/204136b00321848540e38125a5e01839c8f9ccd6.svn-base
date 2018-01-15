@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="cxfJPA">
+	    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.mmec.business.bean.SyncTaskBean</class>
+<class>com.mmec.business.bean.AuthorityBean</class>
+<class>com.mmec.business.bean.Cert3Info</class>
+<class>com.mmec.business.bean.ContractEntityBean</class>
+<class>com.mmec.business.bean.ContractInfoListBean</class>
+<class>com.mmec.business.bean.HandWritingBean</class>
+<class>com.mmec.business.bean.HttpParam</class>
+<class>com.mmec.business.bean.LogoBean</class>
+<class>com.mmec.business.bean.MobileVerifyBean</class>
+<class>com.mmec.business.bean.PlatformBean</class>
+<class>com.mmec.business.bean.PlatformCallbackBean</class>
+<class>com.mmec.business.bean.RaCertBean</class>
+<class>com.mmec.business.bean.SealBean</class>
+<class>com.mmec.business.bean.UkeyInfoBean</class>
+<class>com.mmec.business.bean.UserBean</class>
+		<properties>
+			<!--配置Hibernate方言 -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			<!--配置数据库驱动 -->
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<!--配置数据库用户名 mmec201404, tester -->
+			<property name="hibernate.connection.username" value="root" />
+			<!--配置数据库密码 123..., 123456 -->
+			<property name="hibernate.connection.password" value="root" />
+			<!--配置数据库url 172.16.0.114:3306/mmec_centre, -->
+			<property name="hibernate.connection.url"
+				value="jdbc:mysql://192.168.10.154:3306/mmec_c_3.0" />
+			<!--设置外连接抓取树的最大深度 -->
+			<property name="hibernate.max_fetch_depth" value="3" />
+			<!--自动输出schema创建DDL语句 -->
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="javax.persistence.validation.mode" value="none" />
+			<!--hibernate的c3p0连接池配置（需要jar包：c3p0-0.9.0.4.jar） org.hibernate.connection.C3P0ConnectionProvider -->
+			<property name="hibernate.connection.provider_class"
+				value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider" />
+			<!-- 最小连接数 -->
+			<property name="c3p0.min_size" value="10" />
+			<!-- 最大连接数 -->
+			<property name="c3p0.max_size" value="100" />
+			<!-- 最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+			<property name="c3p0.maxIdleTime" value="0" />
+			<!-- 获得连接的超时时间,如果超过这个时间,会抛出异常，单位毫秒 -->
+			<property name="c3p0.timeout" value="3000" />
+			<!-- 最大的PreparedStatement的数量 -->
+			<property name="c3p0.max_statements" value="50" />
+			<!-- 每隔120秒检查连接池里的空闲连接 ，单位是秒 -->
+			<property name="c3p0.idle_test_period" value="3000" />
+			<!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
+			<property name="c3p0.acquire_increment" value="5" />
+			<!-- 是否每次都验证连接是否可用 -->
+			<property name="c3p0.validate" value="false" />
+			<!-- <property name="hibernate.c3p0.preferredTestQuery" value="select 
+				1;" /> 这个是最主要的 <property name="connection.autoReconnect" value="true" /> 
+				<property name="connection.autoReconnectForPools" value="true" /> <property 
+				name="connection.is-connection-validation-required" value="true" /> -->
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,294 @@
+<ehcache>
+	<!-- 
+		缓存配置 
+	     name:缓存名称。 
+	     maxElementsInMemory：缓存最大个数。 
+	     eternal:对象是否永久有效，一但设置了，timeout将不起作用。 
+	     timeToIdleSeconds：设置对象在失效前的允许闲置时间（单位：秒）。仅当eternal=false对象不是永久有效时使用，可选属性，默认值是0，也就是可闲置时间无穷大。 
+	     timeToLiveSeconds：设置对象在失效前允许存活时间（单位：秒）。最大时间介于创建时间和失效时间之间。仅当eternal=false对象不是永久有效时使用，默认是0.，也就是对象存活时间无穷大。 
+	     eternal： 设定缓存的elements是否永远不过期。如果为true，则缓存的数据始终有效，如果为false那么还要根据timeToIdleSeconds，timeToLiveSeconds判断。
+	     diskSpoolBufferSizeMB：这个参数设置DiskStore（磁盘缓存）的缓存区大小。默认是30MB。每个Cache都应该有自己的一个缓冲区。 
+	     maxElementsOnDisk：硬盘最大缓存个数。 
+	     diskPersistent：是否缓存虚拟机重启期数据 Whether the disk store persists between restarts of the Virtual Machine. The default value is false. 
+	     diskExpiryThreadIntervalSeconds：磁盘失效线程运行时间间隔，默认是120秒。 
+	     memoryStoreEvictionPolicy：当达到maxElementsInMemory限制时，Ehcache将会根据指定的策略去清理内存。默认策略是LRU（最近最少使用）。你可以设置为FIFO（先进先出）或是LFU（较少使用）。 
+	     clearOnFlush：内存数量最大时是否清除。 
+	     
+	     DiskStore 配置，cache文件的存放目录 ，主要的值有
+	  * user.home - 用户主目录
+	  * user.dir - 用户当前的工作目录
+	  * java.io.tmpdir - Default temp file path默认的temp文件目录
+	--> 
+	
+	
+    <!-- Sets the path to the directory where cache .data files are created.
+
+         If the path is a Java System Property it is replaced by
+         its value in the running VM.
+
+         The following properties are translated:
+         user.home - User's home directory
+         user.dir - User's current working directory
+         java.io.tmpdir - Default temp file path -->
+    <diskStore path="java.io.tmpdir"/>
+
+
+    <!--Default Cache configuration. These will applied to caches programmatically created through
+        the CacheManager.
+
+        The following attributes are required for defaultCache:
+
+        maxInMemory       - Sets the maximum number of objects that will be created in memory
+        eternal           - Sets whether elements are eternal. If eternal,  timeouts are ignored and the element
+                            is never expired.
+        timeToIdleSeconds - Sets the time to idle for an element before it expires. Is only used
+                            if the element is not eternal. Idle time is now - last accessed time
+        timeToLiveSeconds - Sets the time to live for an element before it expires. Is only used
+                            if the element is not eternal. TTL is now - creation time
+        overflowToDisk    - Sets whether elements can overflow to disk when the in-memory cache
+                            has reached the maxInMemory limit.
+
+        -->
+        <!-- 
+		    配置自定义缓存
+		    maxElementsInMemory：缓存中允许创建的最大对象数
+		    eternal：缓存中对象是否为永久的，如果是，超时设置将被忽略，对象从不过期。
+		    timeToIdleSeconds：缓存数据空闲的最大时间，也就是说如果有一个缓存有多久没有被访问就会被销毁，如果该值是 0 就意味着元素可以停顿无穷长的时间。
+		    timeToLiveSeconds：缓存数据存活的时间，缓存对象最大的的存活时间，超过这个时间就会被销毁，这只能在元素不是永久驻留时有效，如果该值是0就意味着元素可以停顿无穷长的时间。
+		    overflowToDisk：内存不足时，是否启用磁盘缓存。
+		    memoryStoreEvictionPolicy：缓存满了之后的淘汰算法。
+		    
+		    每一个小时更新一次缓存（1小时过期） 
+		-->
+    <defaultCache
+        maxElementsInMemory="10000"
+        eternal="false"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="120"
+        overflowToDisk="true"
+        />
+
+    <!--Predefined caches.  Add your cache configuration settings here.
+        If you do not have a configuration for your cache a WARNING will be issued when the
+        CacheManager starts
+
+        The following attributes are required for defaultCache:
+
+        name              - Sets the name of the cache. This is used to identify the cache. It must be unique.
+        maxInMemory       - Sets the maximum number of objects that will be created in memory
+        eternal           - Sets whether elements are eternal. If eternal,  timeouts are ignored and the element
+                            is never expired.
+        timeToIdleSeconds - Sets the time to idle for an element before it expires. Is only used
+                            if the element is not eternal. Idle time is now - last accessed time
+        timeToLiveSeconds - Sets the time to live for an element before it expires. Is only used
+                            if the element is not eternal. TTL is now - creation time
+        overflowToDisk    - Sets whether elements can overflow to disk when the in-memory cache
+                            has reached the maxInMemory limit.
+
+        -->
+
+    <!-- Sample cache named sampleCache1
+        This cache contains a maximum in memory of 10000 elements, and will expire
+        an element if it is idle for more than 5 minutes and lives for more than
+        10 minutes.
+
+        If there are more than 10000 elements it will overflow to the
+        disk cache, which in this configuration will go to wherever java.io.tmp is
+        defined on your system. On a standard Linux system this will be /tmp"
+        
+    
+-->
+    <!-- Place configuration for your caches following -->
+	
+
+   <cache name="mmecCache"
+        maxElementsInMemory="10000"
+        eternal="false"
+        timeToIdleSeconds="30"
+        timeToLiveSeconds="30"
+        overflowToDisk="true">
+		<cacheEventListenerFactory
+        	class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+	        properties="replicateAsynchronously=false, 
+	        replicatePuts=true, replicateUpdates=true,
+	        replicateUpdatesViaCopy=true, replicateRemovals=true "/>
+        <!-- 
+	        RMI缓存分布同步查找 class使用net.sf.ehcache.distribution.RMICacheReplicatorFactory
+	       	 这个工厂支持以下属性：
+	        replicatePuts=true | false – 当一个新元素增加到缓存中的时候是否要复制到其他的peers。默认是true。
+	        replicateUpdates=true | false – 当一个已经在缓存中存在的元素被覆盖时是否要进行复制。默认是true。
+	        replicateRemovals= true | false – 当元素移除的时候是否进行复制。默认是true。
+	        replicateAsynchronously=true | false – 复制方式是异步的指定为true时,是同步的，指定为false时。默认是true。
+	        replicatePutsViaCopy=true | false – 当一个新增元素被拷贝到其他的cache中时是否进行复制指定为true时为复制，默认是true。
+	        replicateUpdatesViaCopy=true | false – 当一个元素被拷贝到其他的cache中时是否进行复制指定为true时为复制，默认是true。
+	            asynchronousReplicationIntervalMillis=1000
+        -->
+        <!-- 监听RMI同步缓存对象配置 注册相应的的缓存监听类，用于处理缓存事件，如put,remove,update,和expire --> 
+        <!-- 
+    	<cacheEventListenerFactory class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+        	properties="replicateAsynchronously=true,
+        	replicatePuts=true,
+        	replicateUpdates=true,
+        	replicateUpdatesViaCopy=false,
+        	replicateRemovals=true"/>
+        	 -->
+        <!-- 用于在初始化缓存，以及自动设置 -->
+        <!-- 
+    	<bootstrapCacheLoaderFactory class="net.sf.ehcache.distribution.RMIBootstrapCacheLoaderFactory"
+            properties="bootstrapAsynchronously=false"/>
+    	 -->
+    	    
+    </cache>    
+        
+    <cache name="evidenceCache"
+     maxElementsInMemory="10000"
+     eternal="false"
+     timeToIdleSeconds="10"
+     timeToLiveSeconds="10"
+     overflowToDisk="true">
+     <cacheEventListenerFactory
+        	class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+	        properties="replicateAsynchronously=false, 
+	        replicatePuts=true, replicateUpdates=true,
+	        replicateUpdatesViaCopy=true, replicateRemovals=true "/>
+     </cache>
+    <cache name="signCache"
+        maxElementsInMemory="10000"
+        eternal="false"
+        timeToIdleSeconds="5"
+        timeToLiveSeconds="5"
+        overflowToDisk="true">
+		<cacheEventListenerFactory
+        	class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+	        properties="replicateAsynchronously=false, replicatePuts=true, 
+	        replicateUpdates=true,
+	        replicateUpdatesViaCopy=true, replicateRemovals=true "/>
+	</cache>
+     <!-- 保全使用 -->   
+    <cache name="protectContract"
+       maxElementsInMemory="10000"
+       eternal="false"
+       timeToIdleSeconds="10"
+       timeToLiveSeconds="10"
+       overflowToDisk="true"
+       >
+       <cacheEventListenerFactory
+        	class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+	        properties="replicateAsynchronously=false, replicatePuts=true, 
+	        replicateUpdates=true,
+	        replicateUpdatesViaCopy=true, replicateRemovals=true "/>
+    </cache>   
+   <!-- 请求处理 -->
+   <cache name="vptCache"
+        maxElementsInMemory="10000"
+        eternal="false"
+        timeToIdleSeconds="7200"
+        timeToLiveSeconds="7200"
+        overflowToDisk="true">
+        <cacheEventListenerFactory
+        	class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+	        properties="replicateAsynchronously=false, replicatePuts=true, 
+	        replicateUpdates=true,
+	        replicateUpdatesViaCopy=true, replicateRemovals=true "/>
+   </cache>     
+     
+	 <!-- 阈值配置 -->
+   	<cache name="vptConfigCache"
+        maxElementsInMemory="10000"
+        eternal="true"
+        overflowToDisk="true"
+        diskPersistent="true">
+        <cacheEventListenerFactory
+        	class="net.sf.ehcache.distribution.jgroups.JGroupsCacheReplicatorFactory"
+	        properties="replicateAsynchronously=false, 
+	        replicatePuts=true, replicateUpdates=true,
+	        replicateUpdatesViaCopy=true, replicateRemovals=true "/>
+    </cache>      
+    
+    <!-- 手动成员发现 mmecCache -->
+    <!-- Server1配置，配置本地hostName、port是400001，分别监听192.168.8.32:400002的mmecCache和192.168.5.231:400003 的mmecCache。
+    		注意这里的mmecCache是缓存的名称，分别对应着server2、server3的cache的配置。 -->
+     <!-- 
+     <cacheManagerPeerProviderFactory 
+        class="net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory" 
+        properties="hostName=localhost,
+        port=400001,
+        socketTimeoutMillis=2000,
+        peerDiscovery=manual,
+        rmiUrls=//192.168.10.102:400002/mmecCache|//192.168.10.105:400003/mmecCache"/>
+        
+         -->
+	<!-- Server2，配置本地host，port为400002，分别同步192.168.8.9:400001的mobileCache和192.168.5.231:400003的mobileCache
+	 <cacheManagerPeerProviderFactory 
+	    class="net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory" 
+	    properties="hostName=localhost,
+	    port=400002,
+	    socketTimeoutMillis=2000,
+	    peerDiscovery=manual,
+	    rmiUrls=//192.168.8.9:400001/mmecCache|//192.168.5.231:400003/mmecCache"
+	 />
+     -->
+     <!-- Server3，配置本地host，port为400003，分别同步192.168.8.9:400001的mobileCache缓存和192.168.8.32:400002的mobileCache缓存
+     <cacheManagerPeerProviderFactory 
+	    class="net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory" 
+	    properties="hostName=localhost,
+	    port=400003,
+	    socketTimeoutMillis=2000,
+	    peerDiscovery=manual,
+	    rmiUrls=//192.168.8.9:400001/mmecCache|//192.168.8.32:400002/mmecCache"
+	 />
+      -->
+      
+      
+	
+	
+	<!-- 
+	<cacheManagerPeerListenerFactory class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory" properties="hostName=192.168.10.61, port=40001,socketTimeoutMillis=2000" />
+	
+	<cache name="mmecCache" maxElementsInMemory="10000" eternal="false" overflowToDisk="true" 
+		timeToIdleSeconds="300" timeToLiveSeconds="600" diskPersistent="false" diskExpiryThreadIntervalSeconds="120">
+	
+	<cacheEventListenerFactory class="net.sf.ehcache.distribution.RMICacheReplicatorFactory" 
+			properties="replicateAsynchronously=true, replicatePuts=true, replicateUpdates=true,replicateUpdatesViaCopy= false, replicateRemovals= true " />
+	</cache>
+	--> 
+	
+	<!-- 单播方式的配置 -->	
+	<cacheManagerPeerProviderFactory
+		class="net.sf.ehcache.distribution.jgroups.JGroupsCacheManagerPeerProviderFactory"
+		properties="connect=TCP(bind_addr=192.168.10.93;bind_port=40001):
+		TCPPING(initial_hosts=192.168.10.93[40001],192.168.10.102[40002];
+		port_range=10;timeout=5000;num_initial_members=2):MERGE2(min_interval=3000;max_interval=5000):
+		FD_ALL(interval=5000;timeout=20000):FD(timeout=5000;max_tries=48;):VERIFY_SUSPECT(timeout=1500):pbcast.NAKACK(retransmit_timeout=100,200,300,600,1200,2400,4800;discard_delivered_msgs=true):pbcast.STABLE(stability_delay=1000;desired_avg_gossip=20000;max_bytes=0):pbcast.GMS(print_local_addr=true;join_timeout=3000)"
+		propertySeparator="::" />
+		
+	<!-- 
+	<cacheManagerPeerProviderFactory
+    	class="net.sf.ehcache.distribution.jgroups.JGroupsCacheManagerPeerProviderFactory"
+    	properties="connect=TCP(bind_addr=192.168.10.102;bind_port=7800):TCPPING(initial_hosts=192.168.10.61[7801],192.168.10.102[7800];
+    		port_range=10;timeout=3000;
+        	num_initial_members=3;up_thread=true;down_thread=true):
+        	VERIFY_SUSPECT(timeout=1500;down_thread=false;up_thread=false):
+        	pbcast.NAKACK(down_thread=true;up_thread=true;gc_lag=100;
+			retransmit_timeout=3000):
+        	pbcast.GMS(join_timeout=5000;join_retry_timeout=2000;shun=false;
+        	print_local_addr=false;down_thread=true;up_thread=true)"
+		propertySeparator="::" />
+	-->
+	<!-- 使用多播方式配置如下： -->
+	<!-- 
+	<cacheManagerPeerProviderFactory class="net.sf.ehcache.distribution.jgroups.JGroupsCacheManagerPeerProviderFactory"
+        properties="connect=UDP(mcast_addr=10.10.10.10;mcast_port=45566;ip_ttl=32; 
+	        mcast_send_buf_size=120000;mcast_recv_buf_size=80000): 
+	        PING(timeout=2000;num_initial_members=6): 
+	        MERGE2(min_interval=5000;max_interval=10000): 
+	        FD_SOCK:VERIFY_SUSPECT(timeout=1500): 
+	        pbcast.NAKACK(gc_lag=10;retransmit_timeout=3000): 
+	        UNICAST(timeout=5000): 
+	        pbcast.STABLE(desired_avg_gossip=20000): 
+	        FRAG:
+	        pbcast.GMS(join_timeout=5000;join_retry_timeout=2000; 
+	        shun=false;print_local_addr=true)"
+        propertySeparator="::" />
+    -->
+</ehcache>
